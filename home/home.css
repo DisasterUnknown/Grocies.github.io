@@ -269,13 +269,13 @@ footer {
 }
 
 /* Section Mobile Screen */
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1000px) {
     .sectionMobile {
         display: none;
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
     .sectionPc {
         display: none;
     }
@@ -301,6 +301,14 @@ footer {
         text-align: center; 
         margin-top: 10px; 
         margin-bottom: 10px;
+    }
+    
+    .sectionMobile ul {
+        margin-top: 100px;
+    }
+
+    .sectionMobile fieldset {
+        margin-top: 25px;
     }
 
 }
