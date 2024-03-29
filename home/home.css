@@ -277,6 +277,10 @@ footer {
         display: none;
     }
 
+    p {
+        font-size: 15px;
+    }
+
     .sectionMobile {
         text-decoration: none;
         color: white;

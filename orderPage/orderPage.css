@@ -147,7 +147,12 @@ table {
 
 .radioSet {
     text-align: right;
-    padding-right: 10%;
+    padding-right: 18%;
+}
+
+.inp {
+    width: 80%;
+    border-radius: 5px;
 }
 
 #textBoxCell {
@@ -226,5 +231,13 @@ table {
     #div2 {
         text-align: center;
         padding: 10px 1px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .radioSet {
+        padding-right: 6%;
     }
 }
