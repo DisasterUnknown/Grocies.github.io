@@ -39,36 +39,38 @@
     <!-- Payment Form -->
     <form class="paymentForm">
         <fieldset>
-            <table>
-                <tr>
-                    <td>Products</td>
-                    <td><input type="text" maxlength="20" required></td>
-                </tr>
-                <tr>
-                    <td>Quantity</td>
-                    <td><input type="number" min="0" required></td>
-                </tr>
-                <tr>
-                    <td>Address</td>
-                    <td><input type="text" maxlength="100" required></td>
-                </tr>
-                <tr>
-                    <td>Total Payment</td>
-                    <td><input type="number" min="0" required></td>
-                </tr>
-                <tr>
-                    <td>Payment Method</td>
-                    <td>
-                        <input type="radio" name="payment">Cash
-                        <input type="radio" name="payment">Card
-                    </td>
-                <tr>
-                    <td colspan="2">
-                        <textarea name="comments" id="textbox" cols="30" rows="10">Comments</textarea>
-                    </td>
-                </tr>
-            </table>
-            <input type="submit" value="Add to Cart">
+            <center>
+                <table>
+                    <tr>
+                        <td class="leftCol">Products</td>
+                        <td class="rightCol"><input type="text" maxlength="20" required></td>
+                    </tr>
+                    <tr>
+                        <td class="leftCol">Quantity</td>
+                        <td class="rightCol"><input type="number" min="0" required></td>
+                    </tr>
+                    <tr>
+                        <td class="leftCol">Address</td>
+                        <td class="rightCol"><input type="text" maxlength="100" required></td>
+                    </tr>
+                    <tr>
+                        <td class="leftCol">Total Payment</td>
+                        <td class="rightCol"><input type="number" min="0" required></td>
+                    </tr>
+                    <tr>
+                        <td class="leftCol">Payment Method</td>
+                        <td class="radioSet">
+                                <input type="radio" name="payment">Cash
+                                <input type="radio" name="payment">Card
+                        </td>
+                    <tr>
+                        <td colspan="2" id="textBoxCell">
+                            <textarea placeholder="Comments" cols="45" rows="10" id="textBox"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+            <input type="submit" value="Add to Cart" class="btnSub">
         </fieldset>
     </form>
 

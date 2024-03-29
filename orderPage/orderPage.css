@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    color: white;
+    font-weight: bold;
 }
 
 body::-webkit-scrollbar {
@@ -118,18 +120,53 @@ hr {
     right: 0;
 }
 
-/*.......................................................................................................................*/
-/*Payment Form Styles*/
-.paymentForm {
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
 
-.paymentForm fieldset {
+/*.......................................................................................................................*/
+/* Order Form styles */
+fieldset {
     width: 70%;
     margin: 0 auto;
     border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+table {
+    width: 60%;
+}
+
+.leftCol {
+    padding-left: 5%;
+    height: 40px;
+}
+
+.rightCol {
+    text-align: right;
+    padding-right: 5%;
+}
+
+.radioSet {
+    text-align: right;
+    padding-right: 10%;
+}
+
+#textBoxCell {
+    padding: 0 10%;
+}
+
+#textBox {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btnSub {
+    height: 30px;
+    width: 100px;
+    float: right;
+    border-radius: 20px;
+    background-color: rgb(29, 28, 28);
+    color: orange;
 }
 
 /*.......................................................................................................................*/
@@ -188,10 +225,6 @@ hr {
 @media screen and (max-width: 662px) {
     #div2 {
         text-align: center;
+        padding: 10px 1px;
     }
-
-    #products {
-        display: none;
-    }
-
 }
