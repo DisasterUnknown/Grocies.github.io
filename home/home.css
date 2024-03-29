@@ -45,11 +45,8 @@ p {
 }
 
 #banner {
-    height: 550px;
     width: 100%;
-    margin-top: -110px;
-    margin-bottom: -115px;
-    clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0 80%);
+    margin-bottom: -0.4em;
 }
 
 
@@ -243,7 +240,8 @@ footer {
 
     #div2 {
         text-align: center;
-        padding: 25px 25px;
+        padding: 15px 10px;
+        font-size: 15px;
     }
 
     #sEnter {

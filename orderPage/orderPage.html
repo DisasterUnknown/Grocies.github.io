@@ -3,6 +3,8 @@
 
 <head>
     <title>Order Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="orderPage.css">
 </head>
 
@@ -14,18 +16,67 @@
         <img src="Resoucers/images/login.png" alt="login" id="loginLogo">
     </div>
 
-    <img src="Resoucers/images/mainBanner.png" alt="Grocies Supermarket" id="banner">
+    <img src="Resoucers/images/mainBanner2.png" alt="Grocies Supermarket" id="banner">
 
     <!--div bar 2-->
     <div id="div2">
         <a href="../home/home.html" class="navigationBar2" id="home">Home</a>
         <a href="" class="navigationBar2" id="products">Products</a>
         <a href="../orderPage/orderPage.html" class="navigationBar2" id="order">Order</a>
-        <a href="../loyaltyRegistration/loyaltyRegistration.html" class="navigationBar2" id="loyalty">Loyalty
-            Registration</a>
+        <a href="../loyaltyRegistration/loyaltyRegistration.html" class="navigationBar2"
+            id="loyalty">Loyalty&nbsp;Registration</a>
         <a href="../aboutUs/aboutUs.html" class="navigationBar2" id="about">About&nbsp;us</a>
         <input type="button" name="sEnter" id="sEnter" value="Search" class="search">
         <input type="text" name="Serch" id="serch" maxlength="50" value=" Search" class="search">
     </div>
+
+    <!-- Topic 1 -->
+    <div class="topic">
+        <h1 id="htopic">Order</h1>
+        <hr>
+    </div>
+
+    <!-- Payment Form -->
+    <form class="paymentForm">
+        <fieldset>
+            <table>
+                <tr>
+                    <td>Products</td>
+                    <td><input type="text" maxlength="20" required></td>
+                </tr>
+                <tr>
+                    <td>Quantity</td>
+                    <td><input type="number" min="0" required></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" maxlength="100" required></td>
+                </tr>
+                <tr>
+                    <td>Total Payment</td>
+                    <td><input type="number" min="0" required></td>
+                </tr>
+                <tr>
+                    <td>Payment Method</td>
+                    <td>
+                        <input type="radio" name="payment">Cash
+                        <input type="radio" name="payment">Card
+                    </td>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="comments" id="textbox" cols="30" rows="10">Comments</textarea>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Add to Cart">
+        </fieldset>
+    </form>
+
+    <!-- Footer -->
+    <footer style="background-color: rgb(2, 32, 2);">
+        <br><br><br><br><br><br><br>
+    </footer>
+
 </body>
+
 </html>
