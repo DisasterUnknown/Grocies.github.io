@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    color: rgb(239, 227, 205);
+    text-align: justify;
+    margin: 15px 100px;
+    font-size: 20px;
+}
+
+/*.......................................................................................................................*/
+/* Navigation bar 1 styles */
+#div1 {
+    padding: 10px 10px;
+    background-color: black;
+}
+
+#logo {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#login {
+    font-size: 20px;
+    color: white;
+    float: right;
+    padding: 5px;
+}
+
+#loginLogo {
+    width: 28px;
+    height: 28px;
+    border-radius: 16px;
+    float: right;
+    padding: 0px;
+}
+
+#banner {
+    height: 550px;
+    width: 100%;
+    margin-top: -110px;
+    margin-bottom: -115px;
+    clip-path: polygon(0 20%, 100% 20%, 100% 80%, 0 80%);
+}
+
+/*.......................................................................................................................*/
+/* Navigation bar 2 styles */
+#div2 {
+    padding: 15px 10px;
+    background-color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navigationBar2 {
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+}
+
+#order {
+    color: yellow;
+}
+
+#sEnter {
+    color: black;
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    float: right;
+    font-weight: bold;
+    background-color: green;
+    border: none;
+
+}
+
+#serch {
+    height: 25px;
+    width: 250px;
+    float: right;
+    border-radius: 5px;
+    border: none;
+}
+
+/*.......................................................................................................................*/
+/*Navigation bar 1 Hover Styles*/
+#logo:hover {
+    color: greenyellow;
+    transition: .5s;
+}
+
+#login:hover {
+    color: greenyellow;
+    transition: .5s;
+}
+
+
+/*.......................................................................................................................*/
+/*Navigation bar 2 Hover Styles*/
+.navigationBar2:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#sEnter:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#order:hover {
+    color: orange;
+    transition: .5s;
+}
+
+/* .......................................................................................................................... */
+/* Navigation Bar 2 Small screen 1 */
+@media screen and (max-width: 980px) {
+    .navigationBar2 {
+        margin: 0 auto;
+    }
+
+    #div2 {
+        text-align: center;
+        padding: 25px 25px;
+    }
+
+    #sEnter {
+        padding: 0 35px;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+/* Navigation Bar 2 Small screen 2 */
+@media screen and (max-width: 662px) {
+    #div2 {
+        text-align: center;
+    }
+
+    #products {
+        display: none;
+    }
+
+}
