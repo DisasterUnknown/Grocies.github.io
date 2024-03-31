@@ -185,5 +185,7 @@ hr {
 @media screen and (max-width: 1000px) {    
     .topic hr {
         display: none;
+        padding: 0;
+        text-align: center;
     }
 }

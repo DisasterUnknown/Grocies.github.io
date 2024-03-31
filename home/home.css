@@ -316,7 +316,9 @@ footer {
 
 /* Topic style in mobile view */
 @media screen and (max-width: 1000px) {    
-    .topic hr {
+    .topic hr, .topic2 hr {
         display: none;
+        padding: 0;
+        text-align: center;
     }
 }
