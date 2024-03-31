@@ -120,6 +120,96 @@ hr {
     right: 0;
 }
 
+/* ......................................................................................................................... */
+/* Body First Topic*/
+
+#htopic2 {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 111px;
+    margin: 0 auto;
+    z-index: 3;
+    position: relative;
+}
+
+/*.......................................................................................................................*/
+/*Branch Styles PC view*/
+.aboutUsSectionPc h3 {
+    margin: 0 30px; 
+    margin-top: 18px; 
+    font-weight: bold; 
+    font-size: 1.8em;
+}
+
+.aboutUsSectionPc fieldset {
+    width: 80%; 
+    margin: 3% auto; 
+    border-radius: 10px;
+}
+
+.aboutUsSectionPc table {
+    width: 90%; 
+    margin: 10px auto;
+}
+
+.aboutUsSectionPc td {
+    width: 50%; 
+    padding: 0 10px;
+}
+
+.aboutUsSectionPc iframe {
+    float: right; 
+    border-radius: 5px;
+}
+
+.imgCol {
+    height: 180px;
+}
+
+.aboutUsSectionPc img {
+    width: 40%;
+    padding: 20px 10px;
+    border-radius: 40px;
+}
+
+/*.......................................................................................................................*/
+/*Branch Styles Mobile view*/
+.aboutUsSectionMobile h3 {
+    margin: 0 30px; 
+    margin-top: 18px; 
+    font-weight: bold; 
+    font-size: 1.8em;
+}
+
+.aboutUsSectionMobile fieldset {
+    width: 80%; 
+    margin: 3% auto; 
+    border-radius: 10px;
+}
+
+.aboutUsSectionMobile table {
+    width: 90%; 
+    margin: 10px auto;
+}
+
+.aboutUsSectionMobile td {
+    width: 50%; 
+    padding: 2.5% 5%;
+}
+
+.aboutUsSectionMobile iframe {
+    display: block;
+    margin: 20px auto; 
+    border-radius: 5px;
+}
+
+.aboutUsSectionMobile img {
+    width: 40%;
+    padding: 20px 10px;
+    border-radius: 40px;
+}
+
 /*.......................................................................................................................*/
 /*Navigation bar 1 Hover Styles*/
 #logo:hover {
@@ -192,4 +282,17 @@ hr {
         text-align: center;
         color: rgb(173, 255, 50) !important;
     } 
+}
+
+/* Section Mobile Screen */
+@media screen and (min-width: 1000px) {
+    .aboutUsSectionMobile  {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutUsSectionPc {
+        display: none;
+    }
 }
