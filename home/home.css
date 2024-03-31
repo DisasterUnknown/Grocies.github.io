@@ -318,7 +318,10 @@ footer {
 @media screen and (max-width: 1000px) {    
     .topic hr, .topic2 hr {
         display: none;
-        padding: 0;
-        text-align: center;
     }
+
+    .topic h1, .topic2 h1 {
+        text-align: center;
+        color: red !important;
+    } 
 }
