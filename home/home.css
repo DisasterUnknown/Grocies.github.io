@@ -322,6 +322,6 @@ footer {
 
     .topic h1, .topic2 h1 {
         text-align: center;
-        color: red !important;
+        color: rgb(173, 255, 50) !important;
     } 
 }
