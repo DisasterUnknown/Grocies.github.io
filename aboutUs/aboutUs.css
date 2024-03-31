@@ -188,6 +188,7 @@ hr {
     }
 
     .topic h1, .topic2 h1 {
+        padding: 0 !important;
         text-align: center;
         color: rgb(173, 255, 50) !important;
     } 
