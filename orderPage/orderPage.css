@@ -13,7 +13,7 @@ body::-webkit-scrollbar {
 p {
     color: rgb(239, 227, 205);
     text-align: justify;
-    margin: 15px 100px;
+    margin: 15px 5%;
     font-size: 20px;
 }
 
@@ -240,5 +240,12 @@ table {
 
     .radioSet {
         padding-right: 6%;
+    }
+}
+
+/* Topic style in mobile view */
+@media screen and (max-width: 1000px) {    
+    .topic hr {
+        display: none;
     }
 }
