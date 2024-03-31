@@ -277,14 +277,6 @@ footer {
         display: none;
     }
 
-    .topic hr, .topic2 hr {
-        display: none;
-    }
-
-    .topic h1, .topic2 h1 {
-        text-decoration: underline;
-    }
-
     p {
         font-size: 15px;
     }
@@ -320,4 +312,11 @@ footer {
         margin-top: 25px;
     }
 
+}
+
+/* Topic style in mobile view */
+@media screen and (max-width: 1000px) {    
+    .topic hr {
+        display: none;
+    }
 }

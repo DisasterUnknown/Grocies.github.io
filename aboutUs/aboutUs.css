@@ -186,8 +186,4 @@ hr {
     .topic hr {
         display: none;
     }
-
-    .topic h1 {
-        text-decoration: underline;
-    }
 }
