@@ -214,6 +214,31 @@ hr {
 }
 
 /*.......................................................................................................................*/
+/*Summery Table Styles*/
+.tableSummery table {
+    width: 75%; 
+    height: 380px; 
+    margin: 35px;
+}
+
+.tableSummery th {
+    font-size: 1.55em; 
+    width: 30%; 
+    border: 1px solid white;
+}
+
+.tableSummery td {
+    padding: 1em; 
+    border: 1px solid white;
+}
+
+.tfooter {
+    text-align: center; 
+    border: none !important;
+    padding: 1px 10px !important;
+}
+
+/*.......................................................................................................................*/
 /*Navigation bar 1 Hover Styles*/
 #logo:hover {
     color: greenyellow;
