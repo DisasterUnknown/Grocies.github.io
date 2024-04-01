@@ -154,6 +154,7 @@ hr {
 }
 
 .aboutUsSectionPc td {
+    text-align: justify;
     width: 50%; 
     padding: 0 10px;
 }
