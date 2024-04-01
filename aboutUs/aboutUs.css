@@ -179,7 +179,7 @@ hr {
     margin: 0 30px; 
     margin-top: 18px; 
     font-weight: bold; 
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 .aboutUsSectionMobile fieldset {
@@ -205,9 +205,9 @@ hr {
 }
 
 .aboutUsSectionMobile img {
-    width: 40%;
+    width: 45%;
     padding: 20px 10px;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 /*.......................................................................................................................*/
@@ -278,7 +278,7 @@ hr {
     }
 
     .topic h1, .topic2 h1 {
-        padding: 0 !important;
+        padding-left: -10px !important;
         text-align: center;
         color: rgb(173, 255, 50) !important;
     } 
