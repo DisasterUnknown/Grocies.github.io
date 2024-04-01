@@ -194,6 +194,7 @@ hr {
 }
 
 .aboutUsSectionMobile td {
+    text-align: justify;
     width: 50%; 
     padding: 2.5% 5%;
 }
