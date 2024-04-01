@@ -200,6 +200,7 @@ hr {
 
 .aboutUsSectionMobile iframe {
     display: block;
+    width: 100%;
     margin: 20px auto; 
     border-radius: 5px;
 }
