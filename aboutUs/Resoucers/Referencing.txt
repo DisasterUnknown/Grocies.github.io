@@ -7,3 +7,5 @@ branchColomboVege.jpg --> https://www.pexels.com/search/supermarket/
 branchKandyVege.jpg --> https://www.pexels.com/photo/grocery-store-264636/
 
 branchColomboPark.png --> https://www.dreamstime.com/photos-images/walmart-parking-lot-high-resolution.html
+
+aboutUs --> https://www.istockphoto.com/search/2/image-film?phrase=supermarket

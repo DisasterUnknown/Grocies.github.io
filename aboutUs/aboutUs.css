@@ -103,10 +103,11 @@ p {
     color: white;
     background-color: black;
     padding: 10px;
-    width: 140px;
+    width: 11.4em;
     margin: 0 auto;
     z-index: 3;
     position: relative;
+    font-size: 1.5em;
 }
 
 hr {
@@ -121,7 +122,32 @@ hr {
 }
 
 /* ......................................................................................................................... */
-/* Body First Topic*/
+/*Our Journey Para*/
+.Journey p {
+    margin: 0 30%;
+    text-align: center;
+}
+
+.Journey img {
+    margin: 20px 30%;
+    width: 40.1%;
+    border-radius: 10px;
+}
+
+/* ......................................................................................................................... */
+/* Body Second Topic*/
+#htopic1 {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 140px;
+    margin: 0 auto;
+    z-index: 3;
+    position: relative;
+}
+
+/* ......................................................................................................................... */
+/* Body Third Topic*/
 
 #htopic2 {
     color: white;
@@ -305,7 +331,7 @@ hr {
         display: none;
     }
 
-    .topic h1, .topic2 h1 {
+    .topic h1 {
         padding-left: -10px !important;
         text-align: center;
         color: rgb(173, 255, 50) !important;
@@ -322,5 +348,11 @@ hr {
 @media screen and (max-width: 1000px) {
     .aboutUsSectionPc {
         display: none;
+    }
+
+    .Journey p {
+        font-size: 18px;
+        margin: 00 10%;
+        text-align: justify !important;
     }
 }
