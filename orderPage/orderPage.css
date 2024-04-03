@@ -226,7 +226,7 @@ table {
     }
 }
 
-/* Navigation Bar 2 Small screen 2 */
+/* Navigation Bar 1 & 2 Small screen 2 */
 @media screen and (max-width: 662px) {
     #div2 {
         text-align: center;
@@ -234,6 +234,28 @@ table {
         font-size: 10px;
     }
 
+
+    #div1 {
+        padding: 10px 10px;
+    }
+
+    #logo {
+        font-size: 20px;
+    }
+
+    #login {
+        font-size: 20px;
+        padding: 0 5px !important;
+    }
+
+    #loginLogo {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+/* Order Form Small Screen Styles */
+@media screen and (max-width: 662px) {
     table {
         width: 100%;
     }
@@ -244,14 +266,15 @@ table {
 }
 
 /* Topic style in mobile view */
-@media screen and (max-width: 1000px) {    
+@media screen and (max-width: 1000px) {
     .topic hr {
         display: none;
     }
 
-    .topic h1, .topic2 h1 {
+    .topic h1,
+    .topic2 h1 {
         padding: 0 !important;
         text-align: center;
         color: rgb(173, 255, 50) !important;
-    } 
+    }
 }

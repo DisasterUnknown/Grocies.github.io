@@ -254,7 +254,7 @@ hr {
 }
 
 .tableSummery td {
-    padding: 1em; 
+    padding: 0.8em; 
     border: 1px solid white;
 }
 
@@ -316,12 +316,30 @@ hr {
     }
 }
 
-/* Navigation Bar 2 Small screen 2 */
+/* Navigation Bar 1 & 2 Small screen 2 */
 @media screen and (max-width: 662px) {
     #div2 {
         text-align: center;
         padding: 10px 1px;
         font-size: 10px;
+    }
+
+    #div1 {
+        padding: 10px 10px;
+    }
+
+    #logo {
+        font-size: 20px;
+    }
+
+    #login {
+        font-size: 20px;
+        padding: 0 5px !important;
+    }
+
+    #loginLogo {
+        width: 23px;
+        height: 23px;
     }
 }
 
