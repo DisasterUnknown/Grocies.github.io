@@ -115,6 +115,7 @@ hr {
     width: 80%;
     background-color: white;
     position: absolute;
+    border-radius: 10px;
     margin: 0 auto;
     top: 50%;
     left: 0;
