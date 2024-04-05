@@ -135,6 +135,59 @@ hr {
     border-radius: 5px;
 }
 
+/* ......................................................................................................................... */
+/* Body Second Topic*/
+#htopic1 {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 255px;
+    margin: 0 auto;
+    z-index: 3;
+    position: relative;
+}
+
+/*.......................................................................................................................*/
+/* Registration Form Styles */
+.regForm {
+    width: 70%;
+    margin: 10px auto;
+    margin-bottom: 30px;
+}
+
+.regForm fieldset {
+    border-radius: 5px;
+}
+
+.regForm fieldset table {
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.regForm fieldset table td {
+    padding: 10px 50px;
+}
+
+.regForm select {
+    border-radius: 5px;
+}
+
+.btsSub input {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    width: 90px;
+    height: 30px;
+    border: 0;
+    border-radius: 50px;
+}
+
+.pContent {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
 /*.......................................................................................................................*/
 /*Navigation bar 1 Hover Styles*/
 #logo:hover {
@@ -163,6 +216,23 @@ hr {
 #loyalty:hover {
     color: orange;
     transition: .5s;
+}
+
+/*.......................................................................................................................*/
+/*Registration Form Button Hover*/
+.btsSub input:hover {
+    color: black;
+    background-color: orange;
+    transition: .5s;
+}
+
+
+/*.......................................................................................................................*/
+/*Registration Form Button Click Styles*/
+.btsSub input:active {
+    transition: none;
+    background-color: greenyellow;
+    animation: 50s forwards;
 }
 
 /* .......................................................................................................................... */
@@ -215,7 +285,7 @@ hr {
 }
 
 /* Topic style in mobile view */
-@media screen and (max-width: 1000px) {    
+@media screen and (max-width: 1000px) {
     .topic hr {
         display: none;
     }
@@ -224,7 +294,7 @@ hr {
         padding-left: -10px !important;
         text-align: center;
         color: rgb(173, 255, 50) !important;
-    } 
+    }
 }
 
 /* Loyalty Scheme style in mobile view */
@@ -243,5 +313,38 @@ hr {
     .lSchemes section fieldset {
         width: 80%;
         margin: 0 auto;
+    }
+}
+
+/* Registration Form style in mobile view */
+@media screen and (max-width: 900px) {
+    .regForm {
+        width: 90%;
+    }
+
+    .regForm fieldset table td {
+        padding: 5px 2%;
+    }
+
+    .regForm fieldset {
+        padding: 0;
+    }
+
+    .regForm td {
+        font-size: 15px;
+    }
+
+    .pContent {
+        float: right;
+        width: 80%;
+    }
+
+    .btsSub {
+        margin-bottom: 10px;
+    }
+
+    .regForm select {
+        border-radius: 5px;
+        float: right;
     }
 }
