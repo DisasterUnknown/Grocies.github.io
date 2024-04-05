@@ -92,6 +92,49 @@ p {
     border: none;
 }
 
+/* ......................................................................................................................... */
+/* Body First Topic*/
+.topic {
+    margin-top: 20px;
+    position: relative;
+}
+
+#htopic {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 230px;
+    margin: 0 auto;
+    z-index: 3;
+    position: relative;
+}
+
+hr {
+    height: 4px;
+    width: 80%;
+    background-color: white;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+/* Loyalty Scheme Styles */
+.lSchemes {
+    display: flex;
+    flex-direction: row;
+}
+
+.lSchemes section {
+    width: 100%;
+    margin: 15px 5px;
+}
+
+.lSchemes section fieldset {
+    border-radius: 5px;
+}
+
 /*.......................................................................................................................*/
 /*Navigation bar 1 Hover Styles*/
 #logo:hover {
@@ -182,4 +225,23 @@ p {
         text-align: center;
         color: rgb(173, 255, 50) !important;
     } 
+}
+
+/* Loyalty Scheme style in mobile view */
+@media screen and (max-width: 900px) {
+    .lSchemes {
+        flex-direction: column !important;
+        width: 90%;
+        margin: 0 auto !important;
+    }
+
+    .lSchemes section {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .lSchemes section fieldset {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
