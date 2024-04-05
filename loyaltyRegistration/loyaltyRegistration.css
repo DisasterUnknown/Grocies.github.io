@@ -317,7 +317,7 @@ hr {
 }
 
 /* Registration Form style in mobile view */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .regForm {
         width: 90%;
     }
