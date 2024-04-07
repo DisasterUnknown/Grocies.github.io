@@ -120,6 +120,7 @@ hr {
     right: 0;
 }
 
+/* ......................................................................................................................... */
 /* Loyalty Scheme Styles */
 .lSchemes {
     display: flex;
@@ -133,6 +134,34 @@ hr {
 
 .lSchemes section fieldset {
     border-radius: 5px;
+}
+
+.lSchemes section img {
+    border-radius: 20px; 
+    border: 2px solid white; 
+    height: 100%; 
+    width: 80%;
+}
+
+.lSchemes section label {
+    float: right; 
+    margin: 10px;
+    padding: 5px; 
+    border-radius: 5px; 
+    border: 1px solid white;  
+    color: black;
+}
+
+#bronze {
+    background-color: #CD7F32;
+}
+
+#celestite {
+    background-color: #00d0ff;
+}
+
+#gold {
+    background-color: #FFD700;
 }
 
 /* ......................................................................................................................... */
@@ -308,6 +337,10 @@ hr {
     .lSchemes section {
         width: 100%;
         margin: 10px auto;
+    }
+
+    .lSchemes p {
+        font-size: 12.3px;
     }
 
     .lSchemes section fieldset {
