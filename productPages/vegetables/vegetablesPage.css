@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    color: rgb(239, 227, 205);
+    text-align: justify;
+    margin: 15px 5%;
+    font-size: 20px;
+}
+
+/*.......................................................................................................................*/
+/* Navigation bar 1 styles */
+#div1 {
+    padding: 10px 10px;
+    background-color: black;
+}
+
+#logo {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#login {
+    font-size: 20px;
+    color: white;
+    float: right;
+    padding: 5px;
+}
+
+#loginLogo {
+    width: 28px;
+    height: 28px;
+    border-radius: 16px;
+    float: right;
+    padding: 0px;
+}
+
+/*.......................................................................................................................*/
+/* Main banner */
+#banner {
+    width: 100%;
+    margin-bottom: -0.4em;
+}
+
+/*.......................................................................................................................*/
+/* Navigation bar 2 styles */
+#div2 {
+    padding: 15px 10px;
+    background-color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navigationBar2 {
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+}
+
+#products {
+    color: yellow;
+}
+
+#sEnter {
+    color: black;
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    float: right;
+    font-weight: bold;
+    background-color: green;
+    border: none;
+
+}
+
+#serch {
+    height: 25px;
+    width: 250px;
+    float: right;
+    border-radius: 5px;
+    border: none;
+}
+
+/* ................................ */
+/* Subsection */
+#products {
+    padding: 25px 0;
+}
+
+.subSet {
+    display: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.subSet a {
+    text-decoration: none;
+    color: white;   
+    border-bottom: 1px dotted white;
+}
+
+#vegetables {
+    color: yellow;
+    border-bottom: 1px dotted yellow;
+}
+
+#products:hover ~ .subSet {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(1, 94, 1);
+    margin-top: 15px;
+    margin-left: 2em;
+}
+
+.subSet:hover {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(1, 94, 1);
+    margin-top: 15px;
+    margin-left: 2em;
+}
+
+.supPoint:hover {
+    color: orange;
+    border-bottom: 1px dotted orange;
+    transition: .4s;
+}
+
+#vegetables:hover {
+    color: orange;
+    border-bottom: 1px dotted orange;
+}
+
+@media screen and (max-width: 662px) {
+    #products:hover ~ .subSet {
+        margin-top: 10px;
+        margin-left: 38px;
+    }
+    
+    .subSet:hover {
+        margin-top: 10px;
+        margin-left: 38px;
+    }
+}
+
+/*.......................................................................................................................*/
+/*Navigation bar 1 Hover Styles*/
+#logo:hover {
+    color: greenyellow;
+    transition: .5s;
+}
+
+#login:hover {
+    color: greenyellow;
+    transition: .5s;
+}
+
+
+/*.......................................................................................................................*/
+/*Navigation bar 2 Hover Styles*/
+.navigationBar2:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#sEnter:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#loyalty:hover {
+    color: orange;
+    transition: .5s;
+}
+
+/* .......................................................................................................................... */
+/* Navigation Bar 2 Small screen 1 */
+@media screen and (max-width: 980px) {
+    .navigationBar2 {
+        margin: 0 auto;
+    }
+
+    #div2 {
+        text-align: center;
+        padding: 10px 5px;
+        font-size: 15px;
+    }
+
+    #sEnter {
+        padding: 0 35px;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+/* Navigation Bar 1 & 2 Small screen 2 */
+@media screen and (max-width: 662px) {
+    #div2 {
+        text-align: center;
+        padding: 10px 1px;
+        font-size: 10px;
+    }
+
+    #div1 {
+        padding: 10px 10px;
+    }
+
+    #logo {
+        font-size: 20px;
+    }
+
+    #login {
+        font-size: 20px;
+        padding: 0 5px !important;
+    }
+
+    #loginLogo {
+        width: 23px;
+        height: 23px;
+    }
+}
