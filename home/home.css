@@ -104,12 +104,6 @@ p {
 .subSet a {
     text-decoration: none;
     color: white;   
-    border-bottom: 1px dotted white;
-}
-
-#vegetables {
-    color: yellow;
-    border-bottom: 1px dotted yellow;
 }
 
 #products:hover ~ .subSet {
@@ -134,13 +128,13 @@ p {
 
 .supPoint:hover {
     color: orange;
-    border-bottom: 1px dotted orange;
+    border-bottom: 1px solid orange;
     transition: .4s;
 }
 
 #vegetables:hover {
     color: orange;
-    border-bottom: 1px dotted orange;
+    border-bottom: 1px solid orange;
 }
 
 @media screen and (max-width: 662px) {
