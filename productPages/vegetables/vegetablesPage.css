@@ -93,9 +93,9 @@ p {
 }
 
 /* ................................ */
-/* Subsection */
+/* Nav bar Subsection */
 #products {
-    padding: 25px 0;
+    padding: 25px 10px;
 }
 
 .subSet {
@@ -107,12 +107,10 @@ p {
 .subSet a {
     text-decoration: none;
     color: white;   
-    border-bottom: 1px dotted white;
 }
 
 #vegetables {
     color: yellow;
-    border-bottom: 1px dotted yellow;
 }
 
 #products:hover ~ .subSet {
@@ -137,13 +135,12 @@ p {
 
 .supPoint:hover {
     color: orange;
-    border-bottom: 1px dotted orange;
+    border-bottom: 1px solid orange;
     transition: .4s;
 }
 
 #vegetables:hover {
     color: orange;
-    border-bottom: 1px dotted orange;
 }
 
 @media screen and (max-width: 662px) {
@@ -156,6 +153,131 @@ p {
         margin-top: 10px;
         margin-left: 38px;
     }
+}
+
+/* ......................................................................................................................... */
+/* Body First Topic*/
+.topic {
+    margin-top: 20px;
+    position: relative;
+}
+
+#htopic {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 145px;
+    margin: 0 auto;
+    z-index: 3;
+    position: relative;
+}
+
+hr {
+    height: 4px;
+    width: 80%;
+    background-color: white;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+/* Vegetables Section Grid Styles */
+.gridSections {
+    padding: 10px;
+    margin: 40px 50px;
+    display: grid;
+    background-color: black /* rgb(24, 21, 21) */;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.gridbox {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+}
+
+.gridbox section h3 {
+    text-align: center;
+}
+
+.vegeImg {
+    margin: 10px auto;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gridbox section a {
+    margin-right: 20px;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.gridbox section input {
+    /* height: 60%; */
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.gridbox section input:hover {
+    color: white;
+    background-color: green;
+    transition: .5s;
+}
+
+@media screen and (max-width: 980px) {
+    .gridbox {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(8, auto);
+    }
+
+    .gridbox a {
+        margin-right: 1px !important;
+        margin-bottom: 1px !important;
+    }
+
+    .gridSections {
+        margin: 10px 10px;
+    }
+
+    .gridSections p {
+        font-size: 13px;
+    }
+}
+
+/* ......................................................................................................................... */
+/* Body second Topic*/
+.topic {
+    margin-top: 20px;
+    position: relative;
+}
+
+#htopic2 {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 118px;
+    margin: 0 auto;
+    z-index: 3;
+    position: relative;
+}
+
+hr {
+    height: 4px;
+    width: 80%;
+    background-color: white;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 0;
+    right: 0;
 }
 
 /*.......................................................................................................................*/
@@ -235,4 +357,17 @@ p {
         width: 23px;
         height: 23px;
     }
+}
+
+/* Topic style in mobile view */
+@media screen and (max-width: 1000px) {    
+    .topic hr, .topic2 hr {
+        display: none;
+    }
+
+    .topic h1, .topic2 h1 {
+        padding: 0 !important;
+        text-align: center;
+        color: rgb(173, 255, 50) !important;
+    } 
 }
