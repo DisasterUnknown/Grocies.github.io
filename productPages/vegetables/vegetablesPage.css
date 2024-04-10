@@ -200,7 +200,7 @@ hr {
     grid-template-rows: repeat(4, auto);
 }
 
-.gridbox section h3 {
+.gridbox section h2 {
     text-align: center;
 }
 
@@ -224,6 +224,10 @@ hr {
     font-weight: bold;
     border-radius: 10px;
     background-color: orange;
+}
+
+.gridbox section:hover {
+    background-color: rgb(18, 17, 17);
 }
 
 .gridbox section input:hover {
