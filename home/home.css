@@ -323,9 +323,10 @@ footer {
 @media screen and (max-width: 662px) {
     #div2 {
         text-align: center;
+        padding: 10px 1px;
+        font-size: 10px;
     }
 
-    
     #div1 {
         padding: 10px 10px;
     }
@@ -343,11 +344,6 @@ footer {
         width: 23px;
         height: 23px;
     }
-
-    #products {
-        display: none;
-    }
-
 }
 
 /* Section Mobile Screen */
