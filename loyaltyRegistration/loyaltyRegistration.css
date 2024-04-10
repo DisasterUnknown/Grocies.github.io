@@ -92,6 +92,72 @@ p {
     border: none;
 }
 
+/* ................................ */
+/* Subsection */
+#products {
+    padding: 25px 10px;
+}
+
+.subSet {
+    display: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.subSet a {
+    text-decoration: none;
+    color: white;   
+    border-bottom: 1px dotted white;
+}
+
+#vegetables {
+    color: yellow;
+    border-bottom: 1px dotted yellow;
+}
+
+#products:hover ~ .subSet {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    z-index: 4;
+    background-color: rgb(1, 94, 1);
+    margin-top: 15px;
+    margin-left: 2em;
+}
+
+.subSet:hover {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    z-index: 4;
+    background-color: rgb(1, 94, 1);
+    margin-top: 15px;
+    margin-left: 2em;
+}
+
+.supPoint:hover {
+    color: orange;
+    border-bottom: 1px dotted orange;
+    transition: .4s;
+}
+
+#vegetables:hover {
+    color: orange;
+    border-bottom: 1px dotted orange;
+}
+
+@media screen and (max-width: 662px) {
+    #products:hover ~ .subSet {
+        margin-top: 10px;
+        margin-left: 38px;
+    }
+    
+    .subSet:hover {
+        margin-top: 10px;
+        margin-left: 38px;
+    }
+}
+
 /* ......................................................................................................................... */
 /* Body First Topic*/
 .topic {
