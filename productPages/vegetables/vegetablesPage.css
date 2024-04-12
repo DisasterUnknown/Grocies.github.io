@@ -189,7 +189,7 @@ hr {
     padding: 10px;
     margin: 40px 50px;
     display: grid;
-    background-color: black /* rgb(24, 21, 21) */;
+    background-color: black;
     border: 1px solid white;
     border-radius: 10px;
 }
