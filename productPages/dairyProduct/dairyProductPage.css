@@ -203,7 +203,8 @@ hr {
 }
 
 .dairyImg {
-    width: 80%;
+    margin: 10px;
+    width: 75%;
     height: auto;
     border-radius: 10px;
 }
@@ -242,6 +243,11 @@ hr {
     .flexbox section input {
         margin-bottom: 10px !important;
         margin-right: 10px !important;
+    }
+
+    .flexbox h2 {
+        font-size: 20px;
+        font-weight: bold;
     }
 }
 
