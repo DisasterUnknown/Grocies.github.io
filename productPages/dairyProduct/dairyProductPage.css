@@ -246,6 +246,7 @@ hr {
     }
 
     .flexbox h2 {
+        color: red;
         font-size: 1em;
         font-weight: bold;
     }
@@ -253,6 +254,7 @@ hr {
 
 @media screen and (max-width: 380px) {
     .flexbox h2 {
+        color: white;
         font-size: 0.9em !important;
     }
 }
