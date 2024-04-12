@@ -281,7 +281,7 @@ hr {
         padding: 10px;
         margin-bottom: 20px !important;
         border-radius: 10px;
-        background-color: rgb(24, 22, 22);
+        background-color: red/*rgb(24, 22, 22)*/;
     }
 }
 
