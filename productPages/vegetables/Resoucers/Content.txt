@@ -2,10 +2,12 @@ Green Valley Farms
 
 Location: Colombo
 Description: Green Valley Farms is known for its fresh and high-quality vegetables. We source a variety of greens and root vegetables from this local farm, ensuring you get the best produce.
+
 Hilltop Gardens
 
 Location: Kandy
 Description: Hilltop Gardens is situated in the scenic hills of Kandy. They specialize in organic vegetables, providing a range of leafy greens and exotic vegetables to our supermarket.
+
 Sunrise Plantations
 
 Location: Matale

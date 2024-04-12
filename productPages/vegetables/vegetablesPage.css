@@ -219,7 +219,6 @@ hr {
 }
 
 .gridbox section input {
-    /* height: 60%; */
     border: none;
     color: black;
     font-weight: bold;
@@ -285,9 +284,22 @@ hr {
     right: 0;
 }
 
+@media screen and (max-width: 980px) {
+    #htopic2 {
+        background-color: rgb(24, 22, 22);
+    }
+}
+
 /* ......................................................................................................................... */
 /* Suppliers section styles */
 @media screen and (max-width: 980px) {
+    .supplySection {
+        margin: 10px;
+        padding-top: 1px;
+        border-radius: 10px;
+        background-color: rgb(24, 22, 22);
+    }
+
     .supplySection h2 {
         font-size: 20px;
     }
