@@ -246,8 +246,14 @@ hr {
     }
 
     .flexbox h2 {
-        font-size: 0.9em;
+        font-size: 1em;
         font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .flexbox h2 {
+        font-size: 0.9em !important;
     }
 }
 
