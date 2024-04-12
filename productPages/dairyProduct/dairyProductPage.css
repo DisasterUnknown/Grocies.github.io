@@ -106,14 +106,14 @@ p {
 
 .subSet a {
     text-decoration: none;
-    color: white;   
+    color: white;
 }
 
 #dairy {
     color: yellow;
 }
 
-#products:hover ~ .subSet {
+#products:hover~.subSet {
     display: block;
     flex-direction: column;
     position: absolute;
@@ -144,11 +144,11 @@ p {
 }
 
 @media screen and (max-width: 662px) {
-    #products:hover ~ .subSet {
+    #products:hover~.subSet {
         margin-top: 10px;
         margin-left: 38px;
     }
-    
+
     .subSet:hover {
         margin-top: 10px;
         margin-left: 38px;
@@ -251,6 +251,40 @@ hr {
     }
 }
 
+/* ......................................................................................................................... */
+/* Body Second Topic*/
+#htopic2 {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 321px;
+    margin: 0 auto;
+    z-index: 3;
+    position: relative;
+}
+
+/* ......................................................................................................................... */
+/* Dairy product infor section */
+.sectionProducts {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 980px) {
+    #htopic2 {
+        font-size: 2em;
+        background-color: rgb(24, 22, 22) !important;
+    }
+
+    .sectionProducts {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        margin-bottom: 20px !important;
+        border-radius: 10px;
+        background-color: rgb(24, 22, 22);
+    }
+}
+
 /*.......................................................................................................................*/
 /*Navigation bar 1 Hover Styles*/
 #logo:hover {
@@ -331,14 +365,17 @@ hr {
 }
 
 /* Topic style in mobile view */
-@media screen and (max-width: 1000px) {    
-    .topic hr, .topic2 hr {
+@media screen and (max-width: 1000px) {
+
+    .topic hr,
+    .topic2 hr {
         display: none;
     }
 
-    .topic h1, .topic2 h1 {
+    .topic h1,
+    .topic2 h1 {
         padding: 0 !important;
         text-align: center;
         color: rgb(173, 255, 50) !important;
-    } 
+    }
 }
