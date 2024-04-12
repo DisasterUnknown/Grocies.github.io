@@ -379,8 +379,13 @@ footer {
         margin-bottom: 10px;
     }
     
+    .itemList {
+        padding: 0 2.5em;
+    }
+
     .sectionMobile ul {
-        margin-top: 100px;
+        margin-top: 50px;
+        padding-left: 0;
     }
 
     .sectionMobile fieldset {
