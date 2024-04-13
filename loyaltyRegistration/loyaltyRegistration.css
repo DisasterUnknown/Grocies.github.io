@@ -50,6 +50,17 @@ p {
     padding: 0px;
 }
 
+/*Navigation bar 1 Hover Styles*/
+#logo:hover {
+    color: greenyellow;
+    transition: .5s;
+}
+
+#login:hover {
+    color: greenyellow;
+    transition: .5s;
+}
+
 /*.......................................................................................................................*/
 /* Main banner */
 #banner {
@@ -96,8 +107,72 @@ p {
     border: none;
 }
 
-/* ................................ */
-/* Nav bar Subsection */
+/*Navigation bar 2 Hover Styles*/
+.navigationBar2:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#sEnter:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#loyalty:hover {
+    color: orange;
+    transition: .5s;
+}
+
+/* Navigation Bar 2 Small screen 1 */
+@media screen and (max-width: 980px) {
+    .navigationBar2 {
+        margin: 0 auto;
+    }
+
+    #div2 {
+        text-align: center;
+        padding: 10px 5px;
+        font-size: 15px;
+    }
+
+    #sEnter {
+        padding: 0 35px;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+/* Navigation Bar 1 & 2 Small screen 2 */
+@media screen and (max-width: 662px) {
+    #div2 {
+        text-align: center;
+        padding: 10px 1px;
+        font-size: 10px;
+    }
+
+    #div1 {
+        padding: 10px 10px;
+    }
+
+    #logo {
+        font-size: 20px;
+    }
+
+    #login {
+        font-size: 20px;
+        padding: 0 5px !important;
+    }
+
+    #loginLogo {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+/*.......................................................................................................................*/
+/* Nav bar Subsection (Dropdown List) */
 #products {
     padding: 25px 10px;
 }
@@ -184,6 +259,20 @@ hr {
     right: 0;
 }
 
+/* Topic style in mobile view */
+@media screen and (max-width: 1000px) {
+    .topic hr {
+        display: none;
+    }
+
+    .topic h1 {
+        padding: 0px auto !important;
+        text-align: justify;
+        margin: 0 auto !important;
+        color: rgb(173, 255, 50) !important;
+    }
+}
+
 /* ......................................................................................................................... */
 /* Loyalty Scheme Styles */
 .lSchemes {
@@ -226,6 +315,29 @@ hr {
 
 #gold {
     background-color: #FFD700;
+}
+
+/* Loyalty Scheme style in mobile view */
+@media screen and (max-width: 900px) {
+    .lSchemes {
+        flex-direction: column !important;
+        width: 90%;
+        margin: 0 auto !important;
+    }
+
+    .lSchemes section {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .lSchemes p {
+        font-size: 12.3px;
+    }
+
+    .lSchemes section fieldset {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 /* ......................................................................................................................... */
@@ -281,37 +393,6 @@ hr {
     border-radius: 5px;
 }
 
-/*.......................................................................................................................*/
-/*Navigation bar 1 Hover Styles*/
-#logo:hover {
-    color: greenyellow;
-    transition: .5s;
-}
-
-#login:hover {
-    color: greenyellow;
-    transition: .5s;
-}
-
-
-/*.......................................................................................................................*/
-/*Navigation bar 2 Hover Styles*/
-.navigationBar2:hover {
-    color: orange;
-    transition: .5s;
-}
-
-#sEnter:hover {
-    color: orange;
-    transition: .5s;
-}
-
-#loyalty:hover {
-    color: orange;
-    transition: .5s;
-}
-
-/*.......................................................................................................................*/
 /*Registration Form Button Hover*/
 .btsSub input:hover {
     color: black;
@@ -319,99 +400,11 @@ hr {
     transition: .5s;
 }
 
-
-/*.......................................................................................................................*/
 /*Registration Form Button Click Styles*/
 .btsSub input:active {
     transition: none;
     background-color: greenyellow;
     animation: 50s forwards;
-}
-
-/* .......................................................................................................................... */
-/* Navigation Bar 2 Small screen 1 */
-@media screen and (max-width: 980px) {
-    .navigationBar2 {
-        margin: 0 auto;
-    }
-
-    #div2 {
-        text-align: center;
-        padding: 10px 5px;
-        font-size: 15px;
-    }
-
-    #sEnter {
-        padding: 0 35px;
-    }
-
-    .search {
-        display: none;
-    }
-}
-
-/* Navigation Bar 1 & 2 Small screen 2 */
-@media screen and (max-width: 662px) {
-    #div2 {
-        text-align: center;
-        padding: 10px 1px;
-        font-size: 10px;
-    }
-
-    #div1 {
-        padding: 10px 10px;
-    }
-
-    #logo {
-        font-size: 20px;
-    }
-
-    #login {
-        font-size: 20px;
-        padding: 0 5px !important;
-    }
-
-    #loginLogo {
-        width: 23px;
-        height: 23px;
-    }
-}
-
-/* Topic style in mobile view */
-@media screen and (max-width: 1000px) {
-    .topic hr {
-        display: none;
-    }
-
-    .topic h1 {
-        padding: 0px auto !important;
-        text-align: justify;
-        margin: 0 auto !important;
-        color: rgb(173, 255, 50) !important;
-    }
-}
-
-/* Loyalty Scheme style in mobile view */
-@media screen and (max-width: 900px) {
-    .lSchemes {
-        flex-direction: column !important;
-        width: 90%;
-        margin: 0 auto !important;
-    }
-
-    .lSchemes section {
-        width: 100%;
-        margin: 10px auto;
-    }
-
-    .lSchemes p {
-        font-size: 12.3px;
-    }
-
-    .lSchemes section fieldset {
-        width: 80%;
-        margin: 0 auto;
-    }
 }
 
 /* Registration Form style in mobile view */

@@ -53,6 +53,16 @@ p {
     margin-bottom: -0.4em;
 }
 
+/*Navigation bar 1 Hover Styles*/
+#logo:hover {
+    color: greenyellow;
+    transition: .5s;
+}
+
+#login:hover {
+    color: greenyellow;
+    transition: .5s;
+}
 
 /*.......................................................................................................................*/
 /* Navigation bar 2 styles */
@@ -93,8 +103,72 @@ p {
     border: none;
 }
 
-/* ................................ */
-/* Nav bar Subsection */
+/*Navigation bar 2 Hover Styles*/
+.navigationBar2:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#sEnter:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#home:hover {
+    color: orange;
+    transition: .5s;
+}
+
+/* Navigation Bar 2 Small screen 1 */
+@media screen and (max-width: 980px) {
+    .navigationBar2 {
+        margin: 0 auto;
+    }
+
+    #div2 {
+        text-align: center;
+        padding: 15px 10px;
+        font-size: 15px;
+    }
+
+    #sEnter {
+        padding: 0 35px;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+/* Navigation Bar 1 & 2 Small screen 2 */
+@media screen and (max-width: 662px) {
+    #div2 {
+        text-align: center;
+        padding: 10px 1px;
+        font-size: 10px;
+    }
+
+    #div1 {
+        padding: 10px 10px;
+    }
+
+    #logo {
+        font-size: 20px;
+    }
+
+    #login {
+        font-size: 20px;
+        padding: 0 5px !important;
+    }
+
+    #loginLogo {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+/*.......................................................................................................................*/
+/* Nav bar Subsection (Dropdown list) */
 #products {
     padding: 25px 10px;
 }
@@ -208,6 +282,19 @@ hr {
     right: 0;
 }
 
+/* Topic style in mobile view */
+@media screen and (max-width: 1000px) {    
+    .topic hr, .topic2 hr {
+        display: none;
+    }
+
+    .topic h1, .topic2 h1 {
+        padding: 0 !important;
+        text-align: center;
+        color: rgb(173, 255, 50) !important;
+    } 
+}
+
 /* ..................................................................................................... */
 /* Sections */
 a {
@@ -256,92 +343,6 @@ li {
     float: right;
     margin-top: -30px;
     margin-right: 10px;
-}
-
-/* ....................................................................................................................... */
-/* Footer */
-footer {
-    margin-top: 50px;
-}
-
-
-/*.......................................................................................................................*/
-/*Navigation bar 1 Hover Styles*/
-#logo:hover {
-    color: greenyellow;
-    transition: .5s;
-}
-
-#login:hover {
-    color: greenyellow;
-    transition: .5s;
-}
-
-
-/*.......................................................................................................................*/
-/*Navigation bar 2 Hover Styles*/
-.navigationBar2:hover {
-    color: orange;
-    transition: .5s;
-}
-
-#sEnter:hover {
-    color: orange;
-    transition: .5s;
-}
-
-#home:hover {
-    color: orange;
-    transition: .5s;
-}
-
-/* .......................................................................................................................... */
-/* Navigation Bar 2 Small screen 1 */
-@media screen and (max-width: 980px) {
-    .navigationBar2 {
-        margin: 0 auto;
-    }
-
-    #div2 {
-        text-align: center;
-        padding: 15px 10px;
-        font-size: 15px;
-    }
-
-    #sEnter {
-        padding: 0 35px;
-    }
-
-    .search {
-        display: none;
-    }
-}
-
-/* Navigation Bar 1 & 2 Small screen 2 */
-@media screen and (max-width: 662px) {
-    #div2 {
-        text-align: center;
-        padding: 10px 1px;
-        font-size: 10px;
-    }
-
-    #div1 {
-        padding: 10px 10px;
-    }
-
-    #logo {
-        font-size: 20px;
-    }
-
-    #login {
-        font-size: 20px;
-        padding: 0 5px !important;
-    }
-
-    #loginLogo {
-        width: 23px;
-        height: 23px;
-    }
 }
 
 /* Section Mobile Screen */
@@ -395,18 +396,10 @@ footer {
     .sectionMobile fieldset {
         margin-top: 25px;
     }
-
 }
 
-/* Topic style in mobile view */
-@media screen and (max-width: 1000px) {    
-    .topic hr, .topic2 hr {
-        display: none;
-    }
-
-    .topic h1, .topic2 h1 {
-        padding: 0 !important;
-        text-align: center;
-        color: rgb(173, 255, 50) !important;
-    } 
+/* ....................................................................................................................... */
+/* Footer */
+footer {
+    margin-top: 50px;
 }

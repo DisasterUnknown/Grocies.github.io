@@ -50,6 +50,17 @@ p {
     padding: 0px;
 }
 
+/*Navigation bar 1 Hover Styles*/
+#logo:hover {
+    color: greenyellow;
+    transition: .5s;
+}
+
+#login:hover {
+    color: greenyellow;
+    transition: .5s;
+}
+
 /*.......................................................................................................................*/
 /* Main banner */
 #banner {
@@ -96,8 +107,72 @@ p {
     border: none;
 }
 
-/* ................................ */
-/* Nav bar Subsection */
+/*Navigation bar 2 Hover Styles*/
+.navigationBar2:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#sEnter:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#about:hover {
+    color: orange;
+    transition: .5s;
+}
+
+/* Navigation Bar 2 Small screen 1 */
+@media screen and (max-width: 980px) {
+    .navigationBar2 {
+        margin: 0 auto;
+    }
+
+    #div2 {
+        text-align: center;
+        padding: 10px 5px;
+        font-size: 15px;
+    }
+
+    #sEnter {
+        padding: 0 35px;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+/* Navigation Bar 1 & 2 Small screen 2 */
+@media screen and (max-width: 662px) {
+    #div2 {
+        text-align: center;
+        padding: 10px 1px;
+        font-size: 10px;
+    }
+
+    #div1 {
+        padding: 10px 10px;
+    }
+
+    #logo {
+        font-size: 20px;
+    }
+
+    #login {
+        font-size: 20px;
+        padding: 0 5px !important;
+    }
+
+    #loginLogo {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+/*.......................................................................................................................*/
+/* Nav bar Subsection (Dropdown List) */
 #products {
     padding: 25px 10px;
 }
@@ -186,8 +261,21 @@ hr {
     right: 0;
 }
 
+/* Topic style in mobile view */
+@media screen and (max-width: 1000px) {    
+    .topic hr {
+        display: none;
+    }
+
+    .topic h1 {
+        padding-left: -10px !important;
+        text-align: center;
+        color: rgb(173, 255, 50) !important;
+    } 
+}
+
 /* ......................................................................................................................... */
-/*Our Journey Para*/
+/*Our Journey Para (History of the SuperMarket)*/
 .Journey p {
     margin: 0 30%;
     text-align: center;
@@ -206,19 +294,6 @@ hr {
     background-color: black;
     padding: 10px;
     width: 127px;
-    margin: 0 auto;
-    z-index: 3;
-    position: relative;
-}
-
-/* ......................................................................................................................... */
-/* Body Third Topic*/
-
-#htopic2 {
-    color: white;
-    background-color: black;
-    padding: 10px;
-    width: 111px;
     margin: 0 auto;
     z-index: 3;
     position: relative;
@@ -304,6 +379,38 @@ hr {
     border-radius: 30px;
 }
 
+/* Branch Styles Mobile Screen using media tags */
+@media screen and (min-width: 1000px) {
+    .aboutUsSectionMobile  {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutUsSectionPc {
+        display: none;
+    }
+
+    .Journey p {
+        font-size: 18px;
+        margin: 00 10%;
+        text-align: justify !important;
+    }
+}
+
+/* ......................................................................................................................... */
+/* Body Third Topic*/
+
+#htopic2 {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 111px;
+    margin: 0 auto;
+    z-index: 3;
+    position: relative;
+}
+
 /*.......................................................................................................................*/
 /*Summery Table Styles*/
 .tableSummery table {
@@ -327,115 +434,4 @@ hr {
     text-align: center; 
     border: none !important;
     padding: 1px 10px !important;
-}
-
-/*.......................................................................................................................*/
-/*Navigation bar 1 Hover Styles*/
-#logo:hover {
-    color: greenyellow;
-    transition: .5s;
-}
-
-#login:hover {
-    color: greenyellow;
-    transition: .5s;
-}
-
-
-/*.......................................................................................................................*/
-/*Navigation bar 2 Hover Styles*/
-.navigationBar2:hover {
-    color: orange;
-    transition: .5s;
-}
-
-#sEnter:hover {
-    color: orange;
-    transition: .5s;
-}
-
-#about:hover {
-    color: orange;
-    transition: .5s;
-}
-
-/* .......................................................................................................................... */
-/* Navigation Bar 2 Small screen 1 */
-@media screen and (max-width: 980px) {
-    .navigationBar2 {
-        margin: 0 auto;
-    }
-
-    #div2 {
-        text-align: center;
-        padding: 10px 5px;
-        font-size: 15px;
-    }
-
-    #sEnter {
-        padding: 0 35px;
-    }
-
-    .search {
-        display: none;
-    }
-}
-
-/* Navigation Bar 1 & 2 Small screen 2 */
-@media screen and (max-width: 662px) {
-    #div2 {
-        text-align: center;
-        padding: 10px 1px;
-        font-size: 10px;
-    }
-
-    #div1 {
-        padding: 10px 10px;
-    }
-
-    #logo {
-        font-size: 20px;
-    }
-
-    #login {
-        font-size: 20px;
-        padding: 0 5px !important;
-    }
-
-    #loginLogo {
-        width: 23px;
-        height: 23px;
-    }
-}
-
-/* Topic style in mobile view */
-@media screen and (max-width: 1000px) {    
-    .topic hr {
-        display: none;
-    }
-
-    .topic h1 {
-        padding-left: -10px !important;
-        text-align: center;
-        color: rgb(173, 255, 50) !important;
-    } 
-}
-
-/* Section Mobile Screen */
-@media screen and (min-width: 1000px) {
-    .aboutUsSectionMobile  {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .aboutUsSectionPc {
-        display: none;
-    }
-
-    .Journey p {
-        font-size: 18px;
-        margin: 00 10%;
-        text-align: justify !important;
-    }
 }

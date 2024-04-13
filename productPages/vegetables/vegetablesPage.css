@@ -50,6 +50,17 @@ p {
     padding: 0px;
 }
 
+/*Navigation bar 1 Hover Styles*/
+#logo:hover {
+    color: greenyellow;
+    transition: .5s;
+}
+
+#login:hover {
+    color: greenyellow;
+    transition: .5s;
+}
+
 /*.......................................................................................................................*/
 /* Main banner */
 #banner {
@@ -96,8 +107,72 @@ p {
     border: none;
 }
 
-/* ................................ */
-/* Nav bar Subsection */
+/*Navigation bar 2 Hover Styles*/
+.navigationBar2:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#sEnter:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#loyalty:hover {
+    color: orange;
+    transition: .5s;
+}
+
+/* Navigation Bar 2 Small screen 1 */
+@media screen and (max-width: 980px) {
+    .navigationBar2 {
+        margin: 0 auto;
+    }
+
+    #div2 {
+        text-align: center;
+        padding: 10px 5px;
+        font-size: 15px;
+    }
+
+    #sEnter {
+        padding: 0 35px;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+/* Navigation Bar 1 & 2 Small screen 2 */
+@media screen and (max-width: 662px) {
+    #div2 {
+        text-align: center;
+        padding: 10px 1px;
+        font-size: 10px;
+    }
+
+    #div1 {
+        padding: 10px 10px;
+    }
+
+    #logo {
+        font-size: 20px;
+    }
+
+    #login {
+        font-size: 20px;
+        padding: 0 5px !important;
+    }
+
+    #loginLogo {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+/*.......................................................................................................................*/
+/* Nav bar Subsection (DropDown List) */
 #products {
     padding: 25px 10px;
 }
@@ -187,6 +262,19 @@ hr {
     right: 0;
 }
 
+/* Topic style in mobile view */
+@media screen and (max-width: 1000px) {    
+    .topic hr, .topic2 hr {
+        display: none;
+    }
+
+    .topic h1, .topic2 h1 {
+        padding: 0 !important;
+        text-align: center;
+        color: rgb(173, 255, 50) !important;
+    } 
+}
+
 /* ......................................................................................................................... */
 /* Vegetables Section Grid Styles */
 .gridSections {
@@ -262,11 +350,6 @@ hr {
 
 /* ......................................................................................................................... */
 /* Body second Topic*/
-.topic {
-    margin-top: 20px;
-    position: relative;
-}
-
 #htopic2 {
     color: white;
     background-color: black;
@@ -275,17 +358,6 @@ hr {
     margin: 0 auto;
     z-index: 3;
     position: relative;
-}
-
-hr {
-    height: 4px;
-    width: 80%;
-    background-color: white;
-    position: absolute;
-    margin: 0 auto;
-    top: 50%;
-    left: 0;
-    right: 0;
 }
 
 @media screen and (max-width: 980px) {
@@ -311,96 +383,4 @@ hr {
     .supplySection p {
         font-size: 15px;
     }
-}
-
-/*.......................................................................................................................*/
-/*Navigation bar 1 Hover Styles*/
-#logo:hover {
-    color: greenyellow;
-    transition: .5s;
-}
-
-#login:hover {
-    color: greenyellow;
-    transition: .5s;
-}
-
-
-/*.......................................................................................................................*/
-/*Navigation bar 2 Hover Styles*/
-.navigationBar2:hover {
-    color: orange;
-    transition: .5s;
-}
-
-#sEnter:hover {
-    color: orange;
-    transition: .5s;
-}
-
-#loyalty:hover {
-    color: orange;
-    transition: .5s;
-}
-
-/* .......................................................................................................................... */
-/* Navigation Bar 2 Small screen 1 */
-@media screen and (max-width: 980px) {
-    .navigationBar2 {
-        margin: 0 auto;
-    }
-
-    #div2 {
-        text-align: center;
-        padding: 10px 5px;
-        font-size: 15px;
-    }
-
-    #sEnter {
-        padding: 0 35px;
-    }
-
-    .search {
-        display: none;
-    }
-}
-
-/* Navigation Bar 1 & 2 Small screen 2 */
-@media screen and (max-width: 662px) {
-    #div2 {
-        text-align: center;
-        padding: 10px 1px;
-        font-size: 10px;
-    }
-
-    #div1 {
-        padding: 10px 10px;
-    }
-
-    #logo {
-        font-size: 20px;
-    }
-
-    #login {
-        font-size: 20px;
-        padding: 0 5px !important;
-    }
-
-    #loginLogo {
-        width: 23px;
-        height: 23px;
-    }
-}
-
-/* Topic style in mobile view */
-@media screen and (max-width: 1000px) {    
-    .topic hr, .topic2 hr {
-        display: none;
-    }
-
-    .topic h1, .topic2 h1 {
-        padding: 0 !important;
-        text-align: center;
-        color: rgb(173, 255, 50) !important;
-    } 
 }
