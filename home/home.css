@@ -401,5 +401,12 @@ li {
 /* ....................................................................................................................... */
 /* Footer */
 footer {
-    margin-top: 50px;
+    background-color: rgb(2, 32, 2);
+}
+
+footer p {
+    text-align: center; 
+    margin: 0 auto; 
+    padding-top: 20px; 
+    height: 40px;
 }
