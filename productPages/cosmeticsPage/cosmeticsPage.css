@@ -50,6 +50,17 @@ p {
     padding: 0px;
 }
 
+/*Navigation bar 1 Hover Styles*/
+#logo:hover {
+    color: greenyellow;
+    transition: .5s;
+}
+
+#login:hover {
+    color: greenyellow;
+    transition: .5s;
+}
+
 /*.......................................................................................................................*/
 /* Main banner */
 #banner {
@@ -100,8 +111,72 @@ p {
     border: none;
 }
 
-/* ................................ */
-/* Nav bar Subsection */
+/*Navigation bar 2 Hover Styles*/
+.navigationBar2:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#sEnter:hover {
+    color: orange;
+    transition: .5s;
+}
+
+#loyalty:hover {
+    color: orange;
+    transition: .5s;
+}
+
+/* Navigation Bar 2 Small screen 1 */
+@media screen and (max-width: 980px) {
+    .navigationBar2 {
+        margin: 0 auto;
+    }
+
+    #div2 {
+        text-align: center;
+        padding: 10px 5px;
+        font-size: 15px;
+    }
+
+    #sEnter {
+        padding: 0 35px;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+/* Navigation Bar 1 & 2 Small screen 2 */
+@media screen and (max-width: 662px) {
+    #div2 {
+        text-align: center;
+        padding: 10px 1px;
+        font-size: 10px;
+    }
+
+    #div1 {
+        padding: 10px 10px;
+    }
+
+    #logo {
+        font-size: 20px;
+    }
+
+    #login {
+        font-size: 20px;
+        padding: 0 5px !important;
+    }
+
+    #loginLogo {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+/*.......................................................................................................................*/
+/* Nav bar Subsection (DropDown List) */
 #products {
     padding: 25px 10px;
 }
@@ -188,6 +263,20 @@ hr {
     right: 0;
 }
 
+/* Topic style in mobile view */
+@media screen and (max-width: 1000px) {
+    .topic hr {
+        display: none;
+    }
+
+    .topic h1 {
+        padding: 0px auto !important;
+        text-align: justify;
+        margin: 0 auto !important;
+        color: rgb(173, 255, 50) !important;
+    }
+}
+
 /* ......................................................................................................................... */
 /* Cosmetics item alignment table styles */
 .cosmeticsTablePc {
@@ -195,8 +284,9 @@ hr {
 }
 
 .cosmeticsTablePc section {
-    margin: 40px 50px; 
+    margin: 40px 10%; 
     border: 1px solid white; 
+    width: 80%;
     border-radius: 10px;
 }
 
@@ -230,6 +320,7 @@ hr {
     transition: .5s;
 }
 
+/* Cosmetics item alignment table styles Mobile view */
 @media screen and (min-width: 980px) {
     .cosmeticsTableMobile {
         display: none;
@@ -283,98 +374,5 @@ hr {
         color: white;
         background-color: green;
         transition: .5s;
-    }
-}
-
-/*.......................................................................................................................*/
-/*Navigation bar 1 Hover Styles*/
-#logo:hover {
-    color: greenyellow;
-    transition: .5s;
-}
-
-#login:hover {
-    color: greenyellow;
-    transition: .5s;
-}
-
-
-/*.......................................................................................................................*/
-/*Navigation bar 2 Hover Styles*/
-.navigationBar2:hover {
-    color: orange;
-    transition: .5s;
-}
-
-#sEnter:hover {
-    color: orange;
-    transition: .5s;
-}
-
-#loyalty:hover {
-    color: orange;
-    transition: .5s;
-}
-
-/* .......................................................................................................................... */
-/* Navigation Bar 2 Small screen 1 */
-@media screen and (max-width: 980px) {
-    .navigationBar2 {
-        margin: 0 auto;
-    }
-
-    #div2 {
-        text-align: center;
-        padding: 10px 5px;
-        font-size: 15px;
-    }
-
-    #sEnter {
-        padding: 0 35px;
-    }
-
-    .search {
-        display: none;
-    }
-}
-
-/* Navigation Bar 1 & 2 Small screen 2 */
-@media screen and (max-width: 662px) {
-    #div2 {
-        text-align: center;
-        padding: 10px 1px;
-        font-size: 10px;
-    }
-
-    #div1 {
-        padding: 10px 10px;
-    }
-
-    #logo {
-        font-size: 20px;
-    }
-
-    #login {
-        font-size: 20px;
-        padding: 0 5px !important;
-    }
-
-    #loginLogo {
-        width: 23px;
-        height: 23px;
-    }
-}
-
-/* Topic style in mobile view */
-@media screen and (max-width: 1000px) {
-    .topic hr {
-        display: none;
-    }
-
-    .topic h1 {
-        padding: 0px auto !important;
-        text-align: justify;
-        margin: 0 auto !important;
-        color: rgb(173, 255, 50) !important;
     }
 }
