@@ -342,6 +342,7 @@ table {
 /* Footer */
 footer {
     background-color: rgb(2, 32, 2);
+    margin-top: 100px;
 }
 
 footer p {
