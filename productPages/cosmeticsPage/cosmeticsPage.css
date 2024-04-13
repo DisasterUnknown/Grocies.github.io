@@ -184,6 +184,103 @@ hr {
     right: 0;
 }
 
+/* Cosmetics item alignment table styles */
+.cosmeticsTablePc {
+    width: 100%;
+}
+
+.cosmeticsTablePc section {
+    margin: 40px 50px; 
+    border: 1px solid white; 
+    border-radius: 10px;
+}
+
+.cosmeticsTablePc section img {
+    margin: 10px auto;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cosmeticsTablePc section div {
+    margin: 10px 10px;
+    text-align: right;
+}
+
+.cosmeticsTablePc section a {
+    text-decoration: none;
+}
+
+.cosmeticsTablePc section a input {
+    border-radius: 10px; 
+    color: black; 
+    font-weight: bold; 
+    border: none;
+    background-color: orange;
+}
+
+.btsOrder:hover {
+    color: white;
+    background-color: green;
+    transition: .5s;
+}
+
+@media screen and (min-width: 980px) {
+    .cosmeticsTableMobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .cosmeticsTablePc {
+        display: none;
+    }
+
+    .cosmeticsTableMobile {
+        width: 100%;
+    }
+    
+    .cosmeticsTableMobile section {
+        margin: 10px 10px; 
+        border: 1px solid white; 
+        border-radius: 10px;
+    }
+
+    .cosmeticsTableMobile section img {
+        margin: 10px auto;
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .cosmeticsTableMobile section p {
+        font-size: 13px;
+    }
+    
+    .cosmeticsTableMobile section div {
+        margin: 10px 10px;
+        text-align: right;
+    }
+    
+    .cosmeticsTableMobile section a {
+        text-decoration: none;
+    }
+    
+    .cosmeticsTableMobile section a input {
+        border-radius: 10px; 
+        color: black; 
+        font-weight: bold; 
+        border: none;
+        background-color: orange;
+    }
+    
+    .btsOrder:hover {
+        color: white;
+        background-color: green;
+        transition: .5s;
+    }
+}
+
 /*.......................................................................................................................*/
 /*Navigation bar 1 Hover Styles*/
 #logo:hover {
