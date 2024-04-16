@@ -1,5 +1,5 @@
 * {
-    font-family: serif; 
+    font-family: serif;
 }
 
 body {
@@ -185,10 +185,10 @@ p {
 
 .subSet a {
     text-decoration: none;
-    color: white;   
+    color: white;
 }
 
-#products:hover ~ .subSet {
+#products:hover~.subSet {
     display: block;
     flex-direction: column;
     position: absolute;
@@ -220,11 +220,11 @@ p {
 }
 
 @media screen and (max-width: 662px) {
-    #products:hover ~ .subSet {
+    #products:hover~.subSet {
         margin-top: 10px;
         margin-left: 38px;
     }
-    
+
     .subSet:hover {
         margin-top: 10px;
         margin-left: 38px;
@@ -262,7 +262,7 @@ hr {
 }
 
 /* Topic style in mobile view */
-@media screen and (max-width: 1000px) {    
+@media screen and (max-width: 1000px) {
     .topic hr {
         display: none;
     }
@@ -271,7 +271,7 @@ hr {
         padding-left: -10px !important;
         text-align: center;
         color: rgb(173, 255, 50) !important;
-    } 
+    }
 }
 
 /* ......................................................................................................................... */
@@ -302,31 +302,31 @@ hr {
 /*.......................................................................................................................*/
 /*Branch Styles PC view*/
 .aboutUsSectionPc h3 {
-    margin: 0 30px; 
-    margin-top: 18px; 
-    font-weight: bold; 
+    margin: 0 30px;
+    margin-top: 18px;
+    font-weight: bold;
     font-size: 1.8em;
 }
 
 .aboutUsSectionPc fieldset {
-    width: 80%; 
-    margin: 3% auto; 
+    width: 80%;
+    margin: 3% auto;
     border-radius: 10px;
 }
 
 .aboutUsSectionPc table {
-    width: 90%; 
+    width: 90%;
     margin: 10px auto;
 }
 
 .aboutUsSectionPc td {
     text-align: justify;
-    width: 50%; 
+    width: 50%;
     padding: 0 10px;
 }
 
 .aboutUsSectionPc iframe {
-    float: right; 
+    float: right;
     border-radius: 5px;
 }
 
@@ -343,33 +343,33 @@ hr {
 /*.......................................................................................................................*/
 /*Branch Styles Mobile view*/
 .aboutUsSectionMobile h3 {
-    margin: 0 30px; 
-    margin-top: 18px; 
-    font-weight: bold; 
+    margin: 0 30px;
+    margin-top: 18px;
+    font-weight: bold;
     font-size: 1.5em;
 }
 
 .aboutUsSectionMobile fieldset {
-    width: 80%; 
-    margin: 3% auto; 
+    width: 80%;
+    margin: 3% auto;
     border-radius: 10px;
 }
 
 .aboutUsSectionMobile table {
-    width: 90%; 
+    width: 90%;
     margin: 10px auto;
 }
 
 .aboutUsSectionMobile td {
     text-align: justify;
-    width: 50%; 
+    width: 50%;
     padding: 2.5% 5%;
 }
 
 .aboutUsSectionMobile iframe {
     display: block;
     width: 100%;
-    margin: 20px auto; 
+    margin: 20px auto;
     border-radius: 5px;
 }
 
@@ -381,7 +381,7 @@ hr {
 
 /* Branch Styles Mobile Screen using media tags */
 @media screen and (min-width: 1000px) {
-    .aboutUsSectionMobile  {
+    .aboutUsSectionMobile {
         display: none;
     }
 }
@@ -414,24 +414,24 @@ hr {
 /*.......................................................................................................................*/
 /*Summery Table Styles*/
 .tableSummery table {
-    width: 75%; 
-    height: 380px; 
+    width: 75%;
+    height: 380px;
     margin: 25px;
 }
 
 .tableSummery th {
-    font-size: 1.2em; 
-    width: 30%; 
+    font-size: 1.2em;
+    width: 30%;
     border: 1px solid white;
 }
 
 .tableSummery td {
-    padding: 0.8em; 
+    padding: 0.8em;
     border: 1px solid white;
 }
 
 .tfooter {
-    text-align: center; 
+    text-align: center;
     border: none !important;
     padding: 1px 10px !important;
 }
@@ -443,8 +443,25 @@ footer {
 }
 
 footer p {
-    text-align: center; 
-    margin: 0 auto; 
-    padding-top: 20px; 
+    text-align: center;
+    margin: 0 2em;
+    padding-top: 20px;
     height: 40px;
+}
+
+footer p a {
+    float: right;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-top: 3px;
+    width: 25px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#top:hover {
+    color: black;
+    background-color: greenyellow;
+    transition: .5s;
 }
