@@ -67,6 +67,9 @@ p {
 /*.......................................................................................................................*/
 /* Navigation bar 2 styles */
 #div2 {
+    /* position: fixed;
+    width: 100%;
+    z-index: 5; */
     padding: 15px 10px;
     background-color: green;
     font-weight: bold;
@@ -186,7 +189,6 @@ p {
 
 #products:hover ~ .subSet {
     display: block;
-    flex-direction: column;
     position: absolute;
     z-index: 4;
     background-color: rgb(1, 94, 1);
@@ -196,7 +198,6 @@ p {
 
 .subSet:hover {
     display: block;
-    flex-direction: column;
     position: absolute;
     z-index: 4;
     background-color: rgb(1, 94, 1);
