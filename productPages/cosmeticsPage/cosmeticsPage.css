@@ -320,6 +320,10 @@ hr {
     transition: .5s;
 }
 
+.cosmeticsTablePc section:hover {
+    background-color: rgb(18, 17, 17);
+}
+
 /* Cosmetics item alignment table styles Mobile view */
 @media screen and (min-width: 980px) {
     .cosmeticsTableMobile {
