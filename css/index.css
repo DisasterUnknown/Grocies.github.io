@@ -1,0 +1,48 @@
+* {
+    font-family: serif;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: bold;
+    color: lawngreen;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+}
+
+div {
+    text-align: center;
+    margin-top: 15%;
+}
+
+a:hover {
+    color: yellow;
+    transition: .5s;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 662px) {
+    div {
+        margin-top: 80%;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+}

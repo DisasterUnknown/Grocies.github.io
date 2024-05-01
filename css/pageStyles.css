@@ -1,0 +1,578 @@
+:root {
+    --hoverColor: orange;
+    --currentPageColor: yellow;
+}
+
+/* Home Page Styles */
+
+/* Navigation bar Styles */
+#home {
+    color: var(--currentPageColor);
+}
+
+#home:hover {
+    color: var(--hoverColor);
+}
+
+/* Body Topics*/
+#hrHome1 {
+    width: 105px;
+}
+
+#hrHome2 {
+    width: 123px;
+}
+
+/* ..................................................................................................... */
+/* Sections */
+.sectionPc {
+    text-decoration: none;
+}
+
+.productFields {
+    margin: 10px 20px;
+    border-radius: 10px; 
+    background-color: rgb(20, 20, 20); 
+    border: none;
+}
+
+.productFields ol {
+    color: white; 
+    font-weight: bold;
+}
+
+.productFields legend {
+    color: white; 
+    margin: 0px 10px; 
+    font-size: 20px;
+}
+
+.productFields table {
+    margin-left: auto; 
+    margin-right: auto; 
+    color: white;
+    margin-bottom: 20px;
+}
+
+.productFields td {
+    width: 5%;
+    padding-left: 100px;
+    text-align: justify;
+}
+
+.productFields li {
+    margin-left: 50px;
+}
+
+.imgPc {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    float: right;
+    margin-top: -30px;
+    margin-right: 10px;
+}
+
+/* Section Mobile Screen */
+@media screen and (min-width: 1000px) {
+    .sectionMobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sectionPc {
+        display: none;
+    }
+
+    .introToGrocies {
+        font-size: 15px;
+    }
+
+    .sectionMobile {
+        text-decoration: none;
+        color: white;
+        text-align: justify;
+    }
+
+    .sectionMobile img {
+        border-radius: 10px;
+        width: 80%; 
+        height: 80%; 
+        margin: 0 10%; 
+        margin-bottom: 30px; 
+        margin-top: 5px;
+    }
+
+    .sectionMobile div {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center; 
+        margin-top: 10px; 
+        margin-bottom: 10px;
+    }
+    
+    .itemList {
+        padding: 0 2.5em;
+    }
+
+    .sectionMobile ul {
+        margin-top: 50px;
+        padding-left: 0;
+    }
+
+    .sectionMobile fieldset {
+        margin-top: 25px;
+    }
+}
+
+
+
+
+
+/* ______________________________________________________________________________________________________________________________________ */
+/* Order Page Styles */
+
+/* Navigation bar Styles */
+#order {
+    color: var(--currentPageColor);
+}
+
+#order:hover {
+    color: var(--hoverColor);
+}
+
+/* Topic Styles */
+#hrOrder1 {
+    width: 85px;
+}
+
+/*.......................................................................................................................*/
+/* Order Form styles */
+.paymentForm fieldset {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.paymentForm table {
+    width: 60%;
+}
+
+.leftCol {
+    padding-left: 5%;
+    height: 40px;
+}
+
+.rightCol {
+    text-align: right;
+    padding-right: 5%;
+}
+
+.radioSet {
+    text-align: right;
+    padding-right: 18%;
+}
+
+.inp {
+    width: 80%;
+    border-radius: 5px;
+}
+
+#textBoxCell {
+    padding: 0 10%;
+}
+
+#textBox {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btnSub {
+    height: 30px;
+    width: 100px;
+    float: right;
+    border-radius: 20px;
+    background-color: rgb(29, 28, 28);
+    color: orange;
+}
+
+/* Order Form Default Screen Styles */
+@media screen and (min-width: 662px) {
+    .paymentForm fieldset {
+        width: 50%;
+    }
+}
+
+/* Order Form Small Screen Styles */
+@media screen and (max-width: 662px) {
+    .paymentForm table {
+        width: 100%;
+    }
+
+    .radioSet {
+        padding-right: 6%;
+    }
+
+    footer {
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+
+/* ______________________________________________________________________________________________________________________________________ */
+/* Loyalty Page Styles */
+.loyaltyPage {
+    font-weight: bold;
+}
+
+/* Navigation bar Styles */
+#loyalty {
+    color: var(--currentPageColor);
+}
+
+#loyalty:hover {
+    color: var(--hoverColor);
+}
+
+/* Body Topic Styles*/
+#hrLoyalty1 {
+    width: 230px;
+}
+
+#hrLoyalty2 {
+    width: 255px;
+}
+
+/* ......................................................................................................................... */
+/* Loyalty Scheme Styles */
+.lSchemes {
+    display: flex;
+    flex-direction: row;
+}
+
+.lSchemes section {
+    width: 100%;
+    margin: 15px 5px;
+}
+
+.lSchemes section fieldset {
+    border-radius: 5px;
+}
+
+.lSchemes section img {
+    border-radius: 20px; 
+    border: 2px solid white; 
+    height: 100%; 
+    width: 80%;
+}
+
+.lSchemes section label {
+    float: right; 
+    margin: 10px;
+    padding: 5px; 
+    border-radius: 5px; 
+    border: 1px solid white;  
+    color: black;
+}
+
+#bronze {
+    background-color: #CD7F32;
+}
+
+#celestite {
+    background-color: #00d0ff;
+}
+
+#gold {
+    background-color: #FFD700;
+}
+
+/* Loyalty Scheme style in mobile view */
+@media screen and (max-width: 900px) {
+    .lSchemes {
+        flex-direction: column !important;
+        width: 90%;
+        margin: 0 auto !important;
+    }
+
+    .lSchemes section {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .lSchemes p {
+        font-size: 12.3px;
+    }
+
+    .lSchemes section fieldset {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/*.......................................................................................................................*/
+/* Registration Form Styles */
+.regForm {
+    width: 70%;
+    margin: 10px auto;
+    margin-bottom: 30px;
+}
+
+.regForm fieldset {
+    border-radius: 5px;
+}
+
+.regForm fieldset table {
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.regForm fieldset table td {
+    padding: 10px 50px;
+}
+
+.regForm select {
+    border-radius: 5px;
+}
+
+.btsSub input {
+    color: white;
+    background-color: rgb(34, 33, 33);
+    width: 90px;
+    height: 30px;
+    border: 0;
+    border-radius: 50px;
+}
+
+.pContent {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/*Registration Form Button Hover*/
+.btsSub input:hover {
+    color: black;
+    background-color: orange;
+    transition: .5s;
+}
+
+/*Registration Form Button Click Styles*/
+.btsSub input:active {
+    transition: none;
+    background-color: greenyellow;
+    animation: 50s forwards;
+}
+
+/* Registration Form style in mobile view */
+@media screen and (max-width: 1000px) {
+    .regForm {
+        width: 90%;
+    }
+
+    .regForm fieldset table td {
+        padding: 5px 2%;
+    }
+
+    .regForm fieldset {
+        padding: 0;
+    }
+
+    .regForm td {
+        font-size: 15px;
+    }
+
+    .pContent {
+        float: right;
+        width: 80%;
+    }
+
+    .btsSub {
+        margin-bottom: 10px;
+    }
+
+    .regForm select {
+        border-radius: 5px;
+        float: right;
+    }
+}
+
+
+
+
+
+/* ______________________________________________________________________________________________________________________________________ */
+/* About Us Page Styles */
+
+/* Navigation bar Styles */
+#about {
+    color: var(--currentPageColor);
+}
+
+#about:hover {
+    color: var(--hoverColor);
+}
+
+/* Body Topic Styles*/
+#hrAbout1 {
+    width: 11.4em;
+}
+
+#hrAbout2 {
+    width: 127px;
+}
+
+#hrAbout3 {
+    width: 111px;
+}
+
+@media screen and (max-width: 1000px) {
+    #hrAbout1 {
+        font-size: 23px;
+    }
+}
+
+/* ......................................................................................................................... */
+/*Our Journey Para (History of the SuperMarket)*/
+.Journey p {
+    margin: 0 30%;
+    text-align: center;
+}
+
+.Journey img {
+    margin: 20px 30%;
+    width: 40.1%;
+    border-radius: 10px;
+}
+
+/*.......................................................................................................................*/
+/*Branch Styles PC view*/
+.aboutUsSectionPc h3 {
+    margin: 0 30px;
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.aboutUsSectionPc fieldset {
+    width: 80%;
+    margin: 3% auto;
+    border-radius: 10px;
+}
+
+.aboutUsSectionPc table {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.aboutUsSectionPc td {
+    text-align: justify;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.aboutUsSectionPc iframe {
+    float: right;
+    border-radius: 5px;
+}
+
+.imgCol {
+    height: 180px;
+}
+
+.aboutUsSectionPc img {
+    width: 40%;
+    padding: 20px 10px;
+    border-radius: 40px;
+}
+
+/*.......................................................................................................................*/
+/*Branch Styles Mobile view*/
+.aboutUsSectionMobile h3 {
+    margin: 0 30px;
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.aboutUsSectionMobile fieldset {
+    width: 80%;
+    margin: 3% auto;
+    border-radius: 10px;
+}
+
+.aboutUsSectionMobile table {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.aboutUsSectionMobile td {
+    text-align: justify;
+    width: 50%;
+    padding: 2.5% 5%;
+}
+
+.aboutUsSectionMobile iframe {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.aboutUsSectionMobile img {
+    width: 40%;
+    padding: 20px 5px;
+    border-radius: 30px;
+}
+
+/* Branch Styles Mobile Screen using media tags */
+@media screen and (min-width: 1000px) {
+    .aboutUsSectionMobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutUsSectionPc {
+        display: none;
+    }
+
+    .Journey p {
+        font-size: 18px;
+        margin: 00 10%;
+        text-align: justify !important;
+    }
+}
+
+/*.......................................................................................................................*/
+/*Summery Table Styles*/
+.tableSummery table {
+    width: 75%;
+    height: 380px;
+    margin: 25px;
+}
+
+.tableSummery th {
+    font-size: 1.2em;
+    width: 30%;
+    border: 1px solid white;
+}
+
+.tableSummery td {
+    padding: 0.8em;
+    border: 1px solid white;
+}
+
+.tfooter {
+    text-align: center;
+    border: none !important;
+    padding: 1px 10px !important;
+}

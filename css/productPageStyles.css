@@ -1,0 +1,403 @@
+:root {
+    --hoverColor: orange;
+    --currentPageColor: yellow;
+}
+
+/* Navigation bar Styles For All The Product Pages */
+#products {
+    color: var(--currentPageColor);
+}
+
+#products:hover {
+    color: var(--hoverColor);
+}
+
+
+
+/* ______________________________________________________________________________________________________________________________________ */
+/* Vegetable Page Styles */
+
+/* Navigation bar Styles */
+#vegetables {
+    color: var(--currentPageColor);
+}
+
+#vegetables:hover {
+    color: var(--hoverColor);
+}
+
+/* Body Topics*/
+#hrVegetables1 {
+    width: 145px;
+}
+
+#hrVegetables2 {
+    width: 127px;
+}
+
+@media screen and (max-width: 980px) {
+    #hrVegetables2 {
+        background-color: rgb(24, 22, 22);
+    }
+}
+
+/* ......................................................................................................................... */
+/* Vegetables Section Grid Styles */
+.gridSections {
+    padding: 10px;
+    margin: 40px 50px;
+    display: grid;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.gridbox {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+}
+
+.gridbox section h2 {
+    text-align: center;
+}
+
+.vegeImg {
+    margin: 10px auto;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gridbox section a {
+    margin-right: 20px;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.gridbox section input {
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.gridbox section:hover {
+    background-color: rgb(18, 17, 17);
+}
+
+.gridbox section input:hover {
+    color: white;
+    background-color: green;
+    transition: .5s;
+}
+
+@media screen and (max-width: 980px) {
+    .gridbox {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(8, auto);
+    }
+
+    .gridbox a {
+        margin-right: 1px !important;
+        margin-bottom: 1px !important;
+    }
+
+    .gridSections {
+        margin: 10px 10px;
+    }
+
+    .gridSections p {
+        font-size: 13px;
+    }
+}
+
+/* ......................................................................................................................... */
+/* Suppliers section styles */
+@media screen and (max-width: 980px) {
+    .supplySection {
+        margin: 10px;
+        padding-top: 1px;
+        border-radius: 10px;
+        background-color: rgb(24, 22, 22);
+    }
+
+    .supplySection h2 {
+        font-size: 20px;
+    }
+
+    .supplySection p {
+        font-size: 15px;
+    }
+}
+
+
+
+
+/* ______________________________________________________________________________________________________________________________________ */
+/* Dairy Products Page Styles */
+
+/* Navigation bar Styles */
+#dairy {
+    color: var(--currentPageColor);
+}
+
+#dairy:hover {
+    color: var(--hoverColor);
+}
+
+/* Body First Topic*/
+#hrDairy1 {
+    width: 205px;
+}
+
+#hrDairy2 {
+    width: 321px;
+}
+
+@media screen and (max-width: 980px) {
+    #hrDairy2 {
+        background-color: rgb(24, 22, 22);
+    }
+}
+
+/* ......................................................................................................................... */
+/* Dairy Section Flex Styles */
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flexSections {
+    border: 1px solid white;
+    border-radius: 10px;
+    flex: 0 0 calc(33.33% - 100px);
+    margin: 40px 50px;
+    box-sizing: border-box;
+}
+
+.flexbox section h2 {
+    text-align: center;
+}
+
+.dairyImg {
+    margin: 10px;
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.flexbox section input {
+    float: right;
+    border: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.flexbox section:hover {
+    background-color: rgb(18, 17, 17);
+}
+
+.flexbox input:hover {
+    color: white;
+    background-color: green;
+    transition: .5s;
+}
+
+@media screen and (max-width: 980px) {
+    .flexSections {
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px 10px;
+    }
+
+    .flexbox p {
+        font-size: 13px;
+    }
+
+    .flexbox section input {
+        margin-bottom: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .flexbox h2 {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .flexbox h2 {
+        font-size: 0.9em !important;
+    }
+}
+
+/* ......................................................................................................................... */
+/* Dairy product infor section */
+.sectionProducts {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 980px) {
+    #hrDairy2 {
+        font-size: 2em;
+        width: auto;
+        background-color: rgb(24, 22, 22) !important;
+    }
+
+    .sectionProducts section p {
+        font-size: 1em;
+    }
+
+    .sectionProducts {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        margin-bottom: 20px !important;
+        border-radius: 10px;
+        background-color: rgb(24, 22, 22);
+    }
+}
+
+
+
+
+/* ______________________________________________________________________________________________________________________________________ */
+/* Cosmetics Products Page Styles */
+
+/* Navigation bar Styles */
+#Cosmetics {
+    color: var(--currentPageColor);
+}
+
+#Cosmetics:hover {
+    color: var(--hoverColor);
+}
+
+/* Body First Topic*/
+#hrCosmetics1 {
+    width: 138px;
+}
+
+/* Topic style in mobile view */
+@media screen and (max-width: 1000px) {
+    .topic hr {
+        display: none;
+    }
+
+    .topic h1 {
+        padding: 0px auto !important;
+        text-align: justify;
+        margin: 0 auto !important;
+        color: rgb(173, 255, 50) !important;
+    }
+}
+
+/* ......................................................................................................................... */
+/* Cosmetics item alignment table styles */
+.cosmeticsTablePc {
+    width: 100%;
+}
+
+.cosmeticsTablePc section {
+    margin: 40px 10%; 
+    border: 1px solid white; 
+    width: 80%;
+    border-radius: 10px;
+}
+
+.cosmeticsTablePc section img {
+    margin: 10px auto;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cosmeticsTablePc section div {
+    margin: 10px 10px;
+    text-align: right;
+}
+
+.cosmeticsTablePc section a {
+    text-decoration: none;
+}
+
+.cosmeticsTablePc section a input {
+    border-radius: 10px; 
+    color: black; 
+    font-weight: bold; 
+    border: none;
+    background-color: orange;
+}
+
+.btsOrder:hover {
+    color: white;
+    background-color: green;
+    transition: .5s;
+}
+
+.cosmeticsTablePc section:hover {
+    background-color: rgb(18, 17, 17);
+}
+
+/* Cosmetics item alignment table styles Mobile view */
+@media screen and (min-width: 980px) {
+    .cosmeticsTableMobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .cosmeticsTablePc {
+        display: none;
+    }
+
+    .cosmeticsTableMobile {
+        width: 100%;
+    }
+    
+    .cosmeticsTableMobile section {
+        margin: 10px 10px; 
+        border: 1px solid white; 
+        border-radius: 10px;
+    }
+
+    .cosmeticsTableMobile section img {
+        margin: 10px auto;
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .cosmeticsTableMobile section p {
+        font-size: 13px;
+    }
+    
+    .cosmeticsTableMobile section div {
+        margin: 10px 10px;
+        text-align: right;
+    }
+    
+    .cosmeticsTableMobile section a {
+        text-decoration: none;
+    }
+    
+    .cosmeticsTableMobile section a input {
+        border-radius: 10px; 
+        color: black; 
+        font-weight: bold; 
+        border: none;
+        background-color: orange;
+    }
+    
+    .btsOrder:hover {
+        color: white;
+        background-color: green;
+        transition: .5s;
+    }
+}
