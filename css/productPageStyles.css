@@ -173,8 +173,8 @@
 .flexSections {
     border: 1px solid white;
     border-radius: 10px;
-    flex: 0 0 calc(33.33% - 100px);
-    margin: 40px 50px;
+    flex: 0 0 calc(25% - 40px);
+    margin: 20px 20px;
     box-sizing: border-box;
 }
 
