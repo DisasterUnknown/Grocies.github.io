@@ -24,6 +24,98 @@
 }
 
 /* ..................................................................................................... */
+/* Slide Show styles */
+.slideShow {
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: translate(0, 0);
+}
+
+.slideShow div {
+    width: 100%;
+    display: flex;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide{
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    15% {
+        transform: translateX(-100%);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    30% {
+        transform: translateX(-200%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    45% {
+        transform: translateX(-300%);
+    }
+    55% {
+        transform: translateX(-300%);
+    }
+    60% {
+        transform: translateX(-400%);
+    }
+    70% {
+        transform: translateX(-400%);
+    }
+    75% {
+        transform: translateX(-500%);
+    }
+    85% {
+        transform: translateX(-500%);
+    }
+}
+
+.slideShow img {
+    width: 100%;
+}
+
+@media screen and (max-width: 662px) {
+    .slideShow {
+        margin-top: 10px;
+        width: 80%;
+    }
+}
+
+
+/* ..................................................................................................... */
+/* Body Service Grid styles */
+.serviceGrid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, auto);
+    color: wheat;
+    font-size: 20px;
+}
+
+.serviceGrid section {
+    margin: 0 auto;
+}
+
+.serviceGrid section ol, ul {
+    margin-top: 0;
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    .serviceGrid {
+        display: none;
+    }
+}
+
+/* ..................................................................................................... */
 /* Sections */
 .sectionPc {
     text-decoration: none;
@@ -110,10 +202,6 @@
         text-align: center; 
         margin-top: 10px; 
         margin-bottom: 10px;
-    }
-    
-    .itemList {
-        padding: 0 2.5em;
     }
 
     .sectionMobile ul {
