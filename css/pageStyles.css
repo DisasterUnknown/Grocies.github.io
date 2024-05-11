@@ -26,8 +26,9 @@
 /* ..................................................................................................... */
 /* Slide Show styles */
 .slideShow {
-    width: 35%;
+    width: 50%;
     margin: 0 auto;
+    border: 1px solid white;
     border-radius: 10px;
     overflow: hidden;
     transform: translate(0, 0);
@@ -148,7 +149,7 @@
 
 .productFields td {
     width: 5%;
-    padding-left: 100px;
+    padding: 0 25px;
     text-align: justify;
 }
 
@@ -162,7 +163,6 @@
     border-radius: 10%;
     float: right;
     margin-top: -30px;
-    margin-right: 10px;
 }
 
 /* Section Mobile Screen */
