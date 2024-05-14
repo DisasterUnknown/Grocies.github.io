@@ -339,3 +339,24 @@ footer p a {
     background-color: greenyellow;
     transition: .5s;
 }
+
+.footerNav {
+    margin: 0 auto;
+}
+
+.footerNav div {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.footerNav div a {
+    flex-grow: 1;
+    color: white;
+    margin: 10px 10px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
