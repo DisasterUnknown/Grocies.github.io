@@ -40,89 +40,233 @@
     <main>
         <!-- Topic 1 -->
         <div class="topic">
-            <h1 id="hrOrder1" class="topicH1">Order</h1>
+            <h1 id="hrOrder1" class="topicH1">Order Lists</h1>
             <hr>
         </div>
 
-        <!-- Payment Form -->
-        <form class="paymentForm">
-
-            <!-- Product Details Form -->
-            <fieldset>
-                <legend>Product&nbsp;Details</legend>
-                <center>
+        <!-- Order Form List -->
+        <div class="orderForms">
+            <form>
+                <fieldset>
+                    <h2>Fruits</h2>
                     <table>
                         <tr>
-                            <td class="leftCol">Products</td>
-                            <td class="rightCol"><input class="inp" type="text" maxlength="20" required></td>
-                        </tr>
-                        <tr>
-                            <td class="leftCol">Quantity</td>
-                            <td class="rightCol"><input class="inp" type="number" min="0" required></td>
-                        </tr>
-                        <tr>
-                            <td class="leftCol">Total Payment</td>
-                            <td class="rightCol"><input class="inp" type="number" min="0" required></td>
-                        </tr>
-                    </table>
-                </center>
-            </fieldset>
-
-            <!-- Customer Details Form -->
-            <fieldset>
-                <legend>Customer&nbsp;Details</legend>
-                <center>
-                    <table>
-                        <tr>
-                            <td class="leftCol">Tel.No</td>
-                            <td class="rightCol"><input class="inp" type="number" min="0" required></td>
-                        </tr>
-                        <tr>
-                            <td class="leftCol">NIC.No</td>
-                            <td class="rightCol"><input class="inp" type="number" min="0" required></td>
-                        </tr>
-                        <tr>
-                            <td class="leftCol">Address</td>
-                            <td class="rightCol"><input class="inp" type="text" maxlength="100" required></td>
-                        </tr>
-                    </table>
-                </center>
-            </fieldset>
-
-            <!-- Payment Details Form -->
-            <fieldset>
-                <legend>Payment&nbsp;Details</legend>
-                <center>
-                    <table>
-                        <tr>
-                            <td class="leftCol">Card Number</td>
-                            <td class="rightCol"><input type="text" maxlength="12" class="inp" required></td>
-                        </tr>
-                        <tr>
-                            <td class="leftCol">Security Code</td>
-                            <td class="rightCol"><input type="password" minlength="8" class="inp" required></td>
-                        </tr>
-                        <tr>
-                            <td class="leftCol">Expiry Date</td>
-                            <td class="rightCol"><input type="date" maxlength="12" class="inp" required></td>
-                        </tr>
-                        <tr>
-                            <td class="leftCol">Payment Method</td>
-                            <td class="radioSet">
-                                <input type="radio" name="payment" required>Cash
-                                <input type="radio" name="payment" required>Card
+                            <td>
+                                <label>Product Name: </label>
                             </td>
+                            <td>
+                                <select>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </td>
+                        </tr>
+
                         <tr>
-                            <td colspan="2" id="textBoxCell">
-                                <textarea placeholder="Comments" cols="45" rows="10" id="textBox"></textarea>
+                            <td>
+                                <label>Kgs: </label>
+                            </td>
+                            <td>
+                                <input type="number" min="1">
                             </td>
                         </tr>
                     </table>
-                </center>
-                <input type="submit" value="Add to Cart" class="btnSub">
-            </fieldset>
 
-        </form>
+                    <p>Price: </p>
+
+                    <button type="button" class="submitBtns">Add to Cart</button>
+                </fieldset>
+            </form>
+
+
+            <form>
+                <fieldset>
+                    <h2>Vegetables</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Product Name: </label>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label>Kgs:</label>
+                            </td>
+                            <td>
+                                <input type="number" min="1">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>Price: </p>
+
+                    <button type="button" class="submitBtns">Add to Cart</button>
+                </fieldset>
+            </form>
+
+
+            <form>
+                <fieldset>
+                    <h2>Dairy Produce</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Product Name: </label>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label>Quantity:</label>
+                            </td>
+                            <td>
+                                <input type="number" min="1">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>Price: </p>
+
+                    <button type="button" class="submitBtns">Add to Cart</button>
+                </fieldset>
+            </form>
+
+
+            <form>
+                <fieldset>
+                    <h2>Meat and Seafood</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Product Name: </label>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label>Kgs:</label>
+                            </td>
+                            <td>
+                                <input type="number" min="1">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>Price: </p>
+
+                    <button type="button" class="submitBtns">Add to Cart</button>
+                </fieldset>
+            </form>
+
+
+            <form>
+                <fieldset>
+                    <h2>Baking, Cooking Ingredients</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Product Name: </label>
+                            </td>
+                            <td>
+                                <select>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label>Quantity:</label>
+                            </td>
+                            <td>
+                                <input type="number" min="1">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>Price: </p>
+
+                    <button type="button" class="submitBtns">Add to Cart</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- Topic 2 -->
+        <div class="topic">
+            <h1 id="hrOrder2" class="topicH1">Cart</h1>
+            <hr>
+        </div>
+
+        <!-- Order Table (Cart) -->
+        <div class="orderedList">
+            <table id="cartTable">
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td class="items">&nbsp;</td>
+                    <td class="quantity">&nbsp;</td>
+                    <td class="price">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="items">Total</td>
+                    <td>4645</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Table Buttons -->
+        <div class="cartTableBtns">
+            <table>
+                <tr>
+                    <td>
+                        <button type="button" class="submitBtns" id="useFavBtn">Use Favorits</button>
+                    </td>
+                    <td>
+                        <button type="button" class="submitBtns" id="addFavBtn">Add to Favorits</button>
+                    </td>
+                </tr>
+            </table>
+
+            <a href="setOrder.html">
+                <button type="button" class="submitBtns" id="setOrderPageLink">Order</button>
+            </a>
+        </div>
+
     </main>
 
     <!-- Go to top fixed button -->
