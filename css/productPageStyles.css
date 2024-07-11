@@ -15,7 +15,7 @@
 
 
 /* ______________________________________________________________________________________________________________________________________ */
-/* Vegetable Page Styles */
+/* Vegetable Page Styles (Fruits, Ingrediants, Meat & Seafood*/
 
 /* Navigation bar Styles */
 #vegetables {
@@ -33,6 +33,10 @@
 
 #hrVegetables2 {
     width: 127px;
+}
+
+#hrFruits1 {
+    width: 83px;
 }
 
 @media screen and (max-width: 980px) {
