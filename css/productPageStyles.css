@@ -39,6 +39,14 @@
     width: 83px;
 }
 
+#hrGrocery1 {
+    width: 245px;
+}
+
+#hrMeat1 {
+    width: 223px;
+}
+
 @media screen and (max-width: 980px) {
     #hrVegetables2 {
         background-color: rgb(24, 22, 22);
