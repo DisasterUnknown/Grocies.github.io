@@ -461,9 +461,65 @@
 /* ______________________________________________________________________________________________________________________________________ */
 /* Set Order Page Styles */
 #hrSetOrder1 {
+    width: 180px;
+    text-align: center;
+}
+
+.orderForm {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 60px !important;
+    text-align: center;
+
+    fieldset {
+        margin: 20px;
+        border-radius: 10px;
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            /* background-color: red; */
+
+            input {
+                width: 70%;
+                float: right;
+            }
+        }
+    }
+
+    button {
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 5px 10px;
+        background-color: orange;
+    }
+
+    button:hover {
+        background-color: greenyellow;
+        transition: .5s;
+    }
+}
+
+#hrSetOrder2 {
     width: 64px;
 }
 
+@media screen and (max-width: 600px) {
+    #hrSetOrder1, #hrSetOrder2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .orderForm {
+        width: 95%;
+
+        td {
+            width: 50%;
+        }
+    }
+}
 
 
 

@@ -86,7 +86,6 @@ function useFavorit() {
     }
 }
 
-
 // Directing to the set oder Page 
 function changePage() {
     if (cartTable.rows.length > 3) {
