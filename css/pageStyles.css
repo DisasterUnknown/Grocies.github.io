@@ -396,10 +396,6 @@
         float: right;
     }
 
-    #setOrderPageLink a {
-        color: black;
-        text-decoration: none;
-    }
 }
 
 /* Order Form Small Screen Styles */
@@ -456,6 +452,16 @@
     footer {
         margin-bottom: 0px;
     }
+}
+
+
+
+
+
+/* ______________________________________________________________________________________________________________________________________ */
+/* Set Order Page Styles */
+#hrSetOrder1 {
+    width: 64px;
 }
 
 
