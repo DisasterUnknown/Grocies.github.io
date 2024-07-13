@@ -141,15 +141,14 @@ function deleteRow(Btn) {
 // Mannaging the total price of the cart
 function manageTotalCartPrice(functionNo, itemPrice) {
     let totalPrice = document.getElementById("totalPrice");
+    let totalCartPrice = parseInt(numberDeformat(totalPrice.innerText));
 
     if (functionNo == 0) {
         totalCartPrice += itemPrice;
         totalPrice.innerHTML = numberFormat(totalCartPrice);
         
     } else if (functionNo == 1) {
-        let totalPriceValue = totalPrice.innerText;
-
-        totalCartPrice = numberDeformat(totalPriceValue) - numberDeformat(itemPrice);
+        totalCartPrice = totalCartPrice - numberDeformat(itemPrice);
         totalPrice.innerHTML = numberFormat(totalCartPrice);
     }
 
