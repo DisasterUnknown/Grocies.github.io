@@ -1,4 +1,3 @@
-console.log("hello");
 let totalCartPrice = 0;
 
 let fruitBtn = document.getElementById("fruitBtn");
@@ -95,22 +94,21 @@ function formSettings(selectList, itemQuantity) {
 
     let itemName = selectList.value;
     itemQuantity = itemQuantity.value
-    let itemPrice =  productList[itemName] * itemQuantity;
+    let itemPrice = productList[itemName] * itemQuantity;
     // console.log(`Name: ${itemName}, Quantity: ${itemQuantity}, Price: Rs.${itemPrice}`);
 
     addToCart(itemName, itemQuantity, itemPrice);
 
 }
 
-// Add to cart function
+// Add item to cart function
 function addToCart(itemName, itemQuantity, itemPrice) {
     let cartTable = document.getElementById("cartTable");
-    let totalPrice = document.getElementById("totalPrice");
 
 
     // Adding a new row to the table 
     let itemNewRow = cartTable.insertRow(1);
-    
+
     // Adding new cells to the table 
     let itemCell1 = itemNewRow.insertCell(0);
     let itemCell2 = itemNewRow.insertCell(1);
@@ -121,58 +119,91 @@ function addToCart(itemName, itemQuantity, itemPrice) {
     itemCell1.className = "items";
 
     itemCell2.innerHTML = itemQuantity;
-    itemCell3.innerHTML = numberFormat(itemPrice);
+    itemCell3.innerHTML = `<div class="priceCell">
+                                <span>${numberFormat(itemPrice)}</span>
+                                <button onclick="deleteRow(this)">x</button>
+                            </div>`;
 
 
-    // Mannaging the total price of the cart
-    totalCartPrice = totalCartPrice + itemPrice;
-    totalPrice.innerHTML = numberFormat(totalCartPrice);
+    // Calling the total price function 
+    manageTotalCartPrice(0, itemPrice);
+}
+
+// Remove Item from cart Function
+function deleteRow(Btn) {
+    let row = Btn.parentNode.parentNode.parentNode;
+    row.parentNode.removeChild(row);
+
+    let itemPrice = Btn.parentNode.querySelector('span').textContent;
+    manageTotalCartPrice(1, itemPrice);
+}
+
+// Mannaging the total price of the cart
+function manageTotalCartPrice(functionNo, itemPrice) {
+    let totalPrice = document.getElementById("totalPrice");
+
+    if (functionNo == 0) {
+        totalCartPrice += itemPrice;
+        totalPrice.innerHTML = numberFormat(totalCartPrice);
+        
+    } else if (functionNo == 1) {
+        let totalPriceValue = totalPrice.innerText;
+
+        totalCartPrice = numberDeformat(totalPriceValue) - numberDeformat(itemPrice);
+        totalPrice.innerHTML = numberFormat(totalCartPrice);
+    }
+
 }
 
 
-// Formating the numbers into correct style 
+// Formating the numbers with commars 
 function numberFormat(number) {
     return number.toLocaleString('en-US');
 }
 
+// Formating the numbers without commars
+function numberDeformat(number) {
+    return parseInt(number.replace(/,/g, ''));
+}
+
 
 // Calling the Functions
-fruitBtn.addEventListener("click", function() {
+fruitBtn.addEventListener("click", function () {
     let fruitSelect = document.getElementById("fruitSelect");
     let fruitQuantity = document.getElementById("fruitQuantity");
 
     checkValidity("fruitForm", fruitSelect, fruitQuantity);
 });
 
-vegeBtn.addEventListener("click", function() {
+vegeBtn.addEventListener("click", function () {
     let vegeSelect = document.getElementById("vegeSelect");
     let vegeQuantity = document.getElementById("vegeQuantity");
 
     checkValidity("vegeForm", vegeSelect, vegeQuantity);
 });
 
-dariyBtn.addEventListener("click", function() {
+dariyBtn.addEventListener("click", function () {
     let dariySelect = document.getElementById("dariySelect");
     let dariyQuantity = document.getElementById("dariyQuantity");
 
     checkValidity("dairyForm", dariySelect, dariyQuantity);
 });
 
-meatBtn.addEventListener("click", function() {
+meatBtn.addEventListener("click", function () {
     let meatSelect = document.getElementById("meatSelect");
     let meatQuantity = document.getElementById("meatQuantity");
 
     checkValidity("meatForm", meatSelect, meatQuantity);
 });
 
-bakingBtn.addEventListener("click", function() {
+bakingBtn.addEventListener("click", function () {
     let bakingSelect = document.getElementById("bakingSelect");
     let bakingQuantity = document.getElementById("bakingQuantity");
 
     checkValidity("bakingForm", bakingSelect, bakingQuantity);
 });
 
-cosmeticsBtn.addEventListener("click", function() {
+cosmeticsBtn.addEventListener("click", function () {
     let cosmeticsSelect = document.getElementById("cosmeticsSelect");
     let cosmeticsQuantity = document.getElementById("cosmeticsQuantity");
 

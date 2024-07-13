@@ -350,6 +350,20 @@
         border: 1px solid rgba(255, 255, 255, 0.54);
     }
 
+    .priceCell {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            width: 90%;
+        }
+
+        button {
+            color: white;
+            background-color: red;
+        }
+    }
+
     /* Cloum widths */
     .items {
         text-align: left;
