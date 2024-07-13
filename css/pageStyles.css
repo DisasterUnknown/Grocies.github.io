@@ -239,6 +239,13 @@
     width: 64px;
 }
 
+@media screen and (max-width: 700px) {
+    #hrOrder1 {
+        width: 300px;
+        text-align: center;
+    }
+}
+
 /*.......................................................................................................................*/
 /* Order Forms styles */
 .orderForms {
