@@ -49,7 +49,7 @@
 
         <!-- Order Form List -->
         <div class="orderForms">
-            <form>
+            <form id="fruitForm">
                 <fieldset>
                     <h2>Fruits</h2>
                     <table>
@@ -58,7 +58,7 @@
                                 <label>Product Name: </label>
                             </td>
                             <td>
-                                <select>
+                                <select id="fruitSelect">
                                     <option value="Papaya">Papaya</option>
                                     <option value="Banana (Seeni)">Banana (Seeni)</option>
                                     <option value="Apple">Apple</option>
@@ -76,19 +76,19 @@
                                 <label>Kgs: </label>
                             </td>
                             <td>
-                                <input type="number" min="1" required>
+                                <input type="number" id="fruitQuantity" min="1" required>
                             </td>
                         </tr>
                     </table>
 
                     <p>Price: </p>
 
-                    <button class="submitBtns">Add to Cart</button>
+                    <button type="button" class="submitBtns" id="fruitBtn">Add to Cart</button>
                 </fieldset>
             </form>
 
 
-            <form>
+            <form id="vegeForm">
                 <fieldset>
                     <h2>Vegetables</h2>
                     <table>
@@ -97,7 +97,7 @@
                                 <label>Product Name: </label>
                             </td>
                             <td>
-                                <select>
+                                <select id="vegeSelect">
                                     <option value="Batana">Batana</option>
                                     <option value="Capsicum">Capsicum</option>
                                     <option value="Carrot">Carrot</option>
@@ -119,19 +119,19 @@
                                 <label>Kgs:</label>
                             </td>
                             <td>
-                                <input type="number" min="1" required>
+                                <input type="number" id="vegeQuantity" min="1" required>
                             </td>
                         </tr>
                     </table>
 
                     <p>Price: </p>
 
-                    <button class="submitBtns">Add to Cart</button>
+                    <button type="button" class="submitBtns" id="vegeBtn">Add to Cart</button>
                 </fieldset>
             </form>
 
 
-            <form>
+            <form id="dairyForm">
                 <fieldset>
                     <h2>Dairy Produce</h2>
                     <table>
@@ -140,7 +140,7 @@
                                 <label>Product Name: </label>
                             </td>
                             <td>
-                                <select>
+                                <select id="dariySelect">
                                     <option value="Yoghurt Pack">Yoghurt Pack</option>
                                     <option value="Whipping Cream">Whipping Cream</option>
                                     <option value="Cheese Spread">Cheese Spread</option>
@@ -162,19 +162,19 @@
                                 <label>Quantity:</label>
                             </td>
                             <td>
-                                <input type="number" min="1" required>
+                                <input type="number" id="dariyQuantity" min="1" required>
                             </td>
                         </tr>
                     </table>
 
                     <p>Price: </p>
 
-                    <button class="submitBtns">Add to Cart</button>
+                    <button type="button" class="submitBtns" id="dariyBtn">Add to Cart</button>
                 </fieldset>
             </form>
 
 
-            <form>
+            <form id="cosmaticsForm">
                 <fieldset>
                     <h2>Cosmetics</h2>
                     <table>
@@ -183,7 +183,7 @@
                                 <label>Product Name: </label>
                             </td>
                             <td>
-                                <select>
+                                <select id="cosmeticsSelect">
                                     <option value="Black Suede">Black Suede</option>
                                     <option value="Musk">Musk</option>
                                     <option value="Gold Scrub">Gold Scrub</option>
@@ -202,19 +202,19 @@
                                 <label>Quantity:</label>
                             </td>
                             <td>
-                                <input type="number" min="1" required>
+                                <input type="number" id="cosmeticsQuantity" min="1" required>
                             </td>
                         </tr>
                     </table>
 
                     <p>Price: </p>
 
-                    <button class="submitBtns">Add to Cart</button>
+                    <button type="button" class="submitBtns" id="cosmeticsBtn">Add to Cart</button>
                 </fieldset>
             </form>
 
 
-            <form>
+            <form id="meatForm">
                 <fieldset>
                     <h2>Meat and Seafood</h2>
                     <table>
@@ -223,7 +223,7 @@
                                 <label>Product Name: </label>
                             </td>
                             <td>
-                                <select>
+                                <select id="meatSelect">
                                     <option value="Chicken Liver">Chicken Liver</option>
                                     <option value="Pork Cubes">Pork Cubes</option>
                                     <option value="Pork Leg Bone">Pork Leg Bone</option>
@@ -241,19 +241,19 @@
                                 <label>Kgs:</label>
                             </td>
                             <td>
-                                <input type="number" min="1" required>
+                                <input type="number" id="meatQuantity" min="1" required>
                             </td>
                         </tr>
                     </table>
 
                     <p>Price: </p>
 
-                    <button class="submitBtns">Add to Cart</button>
+                    <button type="button" class="submitBtns" id="meatBtn">Add to Cart</button>
                 </fieldset>
             </form>
 
 
-            <form>
+            <form id="bakingForm">
                 <fieldset>
                     <h2>Baking, Cooking Ingredients</h2>
                     <table>
@@ -262,7 +262,7 @@
                                 <label>Product Name: </label>
                             </td>
                             <td>
-                                <select>
+                                <select id="bakingSelect">
                                     <option value="Seasoning Cubes">Seasoning Cubes</option>
                                     <option value="Wijaya Sego">Wijaya Sego</option>
                                     <option value="Curry Powder">Curry Powder</option>
@@ -280,14 +280,14 @@
                                 <label>Quantity:</label>
                             </td>
                             <td>
-                                <input type="number" min="1" required>
+                                <input type="number" id="bakingQuantity" min="1" required>
                             </td>
                         </tr>
                     </table>
 
                     <p>Price: </p>
 
-                    <button class="submitBtns">Add to Cart</button>
+                    <button type="button" class="submitBtns" id="bakingBtn">Add to Cart</button>
                 </fieldset>
             </form>
         </div>
@@ -315,14 +315,14 @@
 
                 <tr>
                     <td colspan="2" class="items">Total</td>
-                    <td>4645</td>
+                    <td id="totalPrice"></td>
                 </tr>
             </table>
         </div>
 
         <!-- Table Buttons -->
         <div class="cartTableBtns">
-            <table>
+            <table id="cartTable">
                 <tr>
                     <td>
                         <button type="button" class="submitBtns" id="useFavBtn">Use Favorits</button>
@@ -373,6 +373,7 @@
 
     </footer>
 
+    <script src="../javaScript/script.js"></script>
 </body>
 
 </html>
