@@ -218,31 +218,56 @@ cosmeticsBtn.addEventListener("click", function () {
 
 // Calling the product section item display
 fruitQuantity.addEventListener("input", function () {
+    // Checking if the user goes beyound 4 digits 
+    if (fruitQuantity.value.length > 4) {                            
+        fruitQuantity.value = fruitQuantity.value.slice(0, 4);
+    }
+
     let fruitSectionPrice = document.querySelector("#fruitForm p");
     formSettings(fruitSelect, fruitQuantity, fruitSectionPrice, 1);
 });
 
 vegeQuantity.addEventListener("input", function () {
+    if (vegeQuantity.value.length > 4) {
+        vegeQuantity.value = vegeQuantity.value.slice(0, 4);
+    }
+    
     let vegeSectionPrice = document.querySelector("#vegeForm p");
     formSettings(vegeSelect, vegeQuantity, vegeSectionPrice, 1);
 });
 
 dariyQuantity.addEventListener("input", function () {
+    if (dariyQuantity.value.length > 4) {
+        dariyQuantity.value = dariyQuantity.value.slice(0, 4);
+    }
+    
     let dariySectionPrice = document.querySelector("#dairyForm p");
     formSettings(dariySelect, dariyQuantity, dariySectionPrice, 1);
 });
 
 cosmeticsQuantity.addEventListener("input", function () {
+    if (cosmeticsQuantity.value.length > 4) {
+        cosmeticsQuantity.value = cosmeticsQuantity.value.slice(0, 4);
+    }
+    
     let cosmeticsSectionPrice = document.querySelector("#cosmaticsForm p");
     formSettings(cosmeticsSelect, cosmeticsQuantity, cosmeticsSectionPrice, 1);
 });
 
 meatQuantity.addEventListener("input", function () {
+    if (meatQuantity.value.length > 4) {
+        meatQuantity.value = meatQuantity.value.slice(0, 4);
+    }
+    
     let meatSectionPrice = document.querySelector("#meatForm p");
     formSettings(meatSelect, meatQuantity, meatSectionPrice, 1);
 });
 
 bakingQuantity.addEventListener("input", function () {
+    if (bakingQuantity.value.length > 4) {
+        bakingQuantity.value = bakingQuantity.value.slice(0, 4);
+    }
+    
     let bakingSectionPrice = document.querySelector("#bakingForm p");
     formSettings(bakingSelect, bakingQuantity, bakingSectionPrice, 1);
 });
