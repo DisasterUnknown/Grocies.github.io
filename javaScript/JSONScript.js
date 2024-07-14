@@ -3,7 +3,6 @@ let cartTable = document.getElementById("cartTable");
 let addFavBtn = document.getElementById("addFavBtn");
 let useFavBtn = document.getElementById("useFavBtn");
 let setOrderPage = document.getElementById("setOrderPageLink");
-console.log("Wolf");
 
 
 // Adding the current item list to the favorits list 

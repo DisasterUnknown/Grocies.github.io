@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Set Order Page</title>
+    <title id="pageTitle">Set Order Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/commonStyles.css">
@@ -56,7 +56,7 @@
                                 <p>Name: </p>
                             </td>
                             <td>
-                                <input type="text" minlength="2" required>
+                                <input type="text" id="userName" minlength="2" placeholder="Enter your name." required>
                             </td>
                         </tr>
 
@@ -65,7 +65,7 @@
                                 <p>Tel. No: </p>
                             </td>
                             <td>
-                                <input type="number" minlength="10" maxlength="10" required>
+                                <input type="number" id="userTelNo" minlength="10" maxlength="10" placeholder="Enter your Tel.No. (10 Digits)" required>
                             </td>
                         </tr>
 
@@ -74,7 +74,7 @@
                                 <p>Address: </p>
                             </td>
                             <td>
-                                <input type="text" required>
+                                <input type="text" placeholder="Enter your address." required>
                             </td>
                         </tr>
                     </table>
@@ -87,7 +87,7 @@
                                 <p>Card No: </p>
                             </td>
                             <td>
-                                <input type="number" required>
+                                <input type="number" id="userCardNo" placeholder="Enter the Card No. (16 Digits)" required>
                             </td>
                         </tr>
 
@@ -96,13 +96,13 @@
                                 <p>CVV: </p>
                             </td>
                             <td>
-                                <input type="number" max="999" min="0" required>
+                                <input type="number" id="userCVV" max="999" min="0" placeholder="Enter the CVV. (3 Digits)" required>
                             </td>
                         </tr>
                     </table>
                 </fieldset>
                 
-                <button>Submit</button>
+                <button type="button" id="submitBtn">Submit</button>
 
             </form>
         </div>
@@ -152,7 +152,8 @@
 
     </footer>
 
-    <script src="../javaScript/favoritManagmentScript.js"></script>
+    <script src="../javaScript/tableScript.js"></script>
+    <script src="../javaScript/JSONScript.js"></script>
 </body>
 
 </html>
