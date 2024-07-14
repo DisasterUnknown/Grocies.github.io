@@ -1,6 +1,7 @@
 :root {
     --hoverColor: orange;
     --currentPageColor: yellow;
+    --sectionHover: rgba(62, 61, 61, 0.585);
 }
 
 /* Navigation bar Styles For All The Product Pages */
@@ -107,7 +108,7 @@
 }
 
 .gridbox section:hover {
-    background-color: rgb(18, 17, 17);
+    background-color: var(--sectionHover);
 }
 
 .gridbox section input:hover {
@@ -223,7 +224,7 @@
 }
 
 .flexbox section:hover {
-    background-color: rgb(18, 17, 17);
+    background-color: var(--sectionHover);
 }
 
 .flexbox input:hover {
@@ -364,7 +365,7 @@
 }
 
 .cosmeticsTablePc section:hover {
-    background-color: rgb(18, 17, 17);
+    background-color: var(--sectionHover);
 }
 
 /* Cosmetics item alignment table styles Mobile view */
