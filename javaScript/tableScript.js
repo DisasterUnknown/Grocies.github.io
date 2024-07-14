@@ -188,7 +188,7 @@ function numberDeformat(number) {
     return parseInt(number.replace(/,/g, ''));
 }
 
-
+// --------------------------------------------------------------------------------------------------------------------------
 // Calling the add to cart Functions 
 fruitBtn.addEventListener("click", function () {
     checkValidity("fruitForm", fruitSelect, fruitQuantity);
@@ -217,57 +217,60 @@ cosmeticsBtn.addEventListener("click", function () {
 
 
 // Calling the product section item display
-fruitQuantity.addEventListener("input", function () {
-    // Checking if the user goes beyound 4 digits 
-    if (fruitQuantity.value.length > 4) {                            
-        fruitQuantity.value = fruitQuantity.value.slice(0, 4);
+function callFunctions(inputFeild, fieldSection, selectionList) {
+    // Checking if the user goes beyound 4 digits
+    if (inputFeild.value.length > 4) {
+        inputFeild.value = inputFeild.value.slice(0, 4);
     }
+    
+    let sectionPrice = document.querySelector(fieldSection);
+    formSettings(selectionList, inputFeild, sectionPrice, 1);
+}
 
-    let fruitSectionPrice = document.querySelector("#fruitForm p");
-    formSettings(fruitSelect, fruitQuantity, fruitSectionPrice, 1);
+// Calling the main function (callFunction)
+fruitQuantity.addEventListener("input", function () {
+    callFunctions(fruitQuantity, "#fruitForm p", fruitSelect);
 });
+fruitSelect.addEventListener("change", function () {
+    callFunctions(fruitQuantity, "#fruitForm p", fruitSelect);
+});
+
 
 vegeQuantity.addEventListener("input", function () {
-    if (vegeQuantity.value.length > 4) {
-        vegeQuantity.value = vegeQuantity.value.slice(0, 4);
-    }
-    
-    let vegeSectionPrice = document.querySelector("#vegeForm p");
-    formSettings(vegeSelect, vegeQuantity, vegeSectionPrice, 1);
+    callFunctions(vegeQuantity, "#vegeForm p", vegeSelect);
 });
+vegeSelect.addEventListener("change", function () {
+    callFunctions(vegeQuantity, "#vegeForm p", vegeSelect);
+});
+
 
 dariyQuantity.addEventListener("input", function () {
-    if (dariyQuantity.value.length > 4) {
-        dariyQuantity.value = dariyQuantity.value.slice(0, 4);
-    }
-    
-    let dariySectionPrice = document.querySelector("#dairyForm p");
-    formSettings(dariySelect, dariyQuantity, dariySectionPrice, 1);
+    callFunctions(dariyQuantity, "#dairyForm p", dariySelect);
 });
+dariySelect.addEventListener("change", function () {
+    callFunctions(dariyQuantity, "#dairyForm p", dariySelect);
+});
+
 
 cosmeticsQuantity.addEventListener("input", function () {
-    if (cosmeticsQuantity.value.length > 4) {
-        cosmeticsQuantity.value = cosmeticsQuantity.value.slice(0, 4);
-    }
-    
-    let cosmeticsSectionPrice = document.querySelector("#cosmaticsForm p");
-    formSettings(cosmeticsSelect, cosmeticsQuantity, cosmeticsSectionPrice, 1);
+    callFunctions(cosmeticsQuantity, "#cosmaticsForm p", cosmeticsSelect);
 });
+cosmeticsSelect.addEventListener("change", function () {
+    callFunctions(cosmeticsQuantity, "#cosmaticsForm p", cosmeticsSelect);
+});
+
 
 meatQuantity.addEventListener("input", function () {
-    if (meatQuantity.value.length > 4) {
-        meatQuantity.value = meatQuantity.value.slice(0, 4);
-    }
-    
-    let meatSectionPrice = document.querySelector("#meatForm p");
-    formSettings(meatSelect, meatQuantity, meatSectionPrice, 1);
+    callFunctions(meatQuantity, "#meatForm p", meatSelect);
+});
+meatSelect.addEventListener("change", function () {
+    callFunctions(meatQuantity, "#meatForm p", meatSelect);
 });
 
+
 bakingQuantity.addEventListener("input", function () {
-    if (bakingQuantity.value.length > 4) {
-        bakingQuantity.value = bakingQuantity.value.slice(0, 4);
-    }
-    
-    let bakingSectionPrice = document.querySelector("#bakingForm p");
-    formSettings(bakingSelect, bakingQuantity, bakingSectionPrice, 1);
+    callFunctions(bakingQuantity, "#bakingForm p", bakingSelect);
+});
+bakingSelect.addEventListener("change", function () {
+    callFunctions(bakingQuantity, "#bakingForm p", bakingSelect);
 });
