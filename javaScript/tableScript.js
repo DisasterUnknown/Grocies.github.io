@@ -1,5 +1,19 @@
 let totalCartPrice = 0;
 
+let fruitSelect = document.getElementById("fruitSelect");
+let vegeSelect = document.getElementById("vegeSelect");
+let dariySelect = document.getElementById("dariySelect");
+let meatSelect = document.getElementById("meatSelect");
+let bakingSelect = document.getElementById("bakingSelect");
+let cosmeticsSelect = document.getElementById("cosmeticsSelect");
+
+let cosmeticsQuantity = document.getElementById("cosmeticsQuantity");
+let bakingQuantity = document.getElementById("bakingQuantity");
+let meatQuantity = document.getElementById("meatQuantity");
+let dariyQuantity = document.getElementById("dariyQuantity");
+let vegeQuantity = document.getElementById("vegeQuantity");
+let fruitQuantity = document.getElementById("fruitQuantity");
+
 let fruitBtn = document.getElementById("fruitBtn");
 let vegeBtn = document.getElementById("vegeBtn");
 let dariyBtn = document.getElementById("dariyBtn");
@@ -13,14 +27,14 @@ function checkValidity(formID, selectList, itemQuantity) {
 
     if (form.checkValidity()) {
         // Calling the formSettings Function 
-        formSettings(selectList, itemQuantity);
+        formSettings(selectList, itemQuantity, null, 0);
     } else {
         form.reportValidity();
     }
 }
 
 // Function to add the products to the cart 
-function formSettings(selectList, itemQuantity) {
+function formSettings(selectList, itemQuantity, elementID, functionID) {
     let productList = {
         // Fruits List
         "Papaya": 460.00,
@@ -97,8 +111,17 @@ function formSettings(selectList, itemQuantity) {
     let itemPrice = productList[itemName] * itemQuantity;
     // console.log(`Name: ${itemName}, Quantity: ${itemQuantity}, Price: Rs.${itemPrice}`);
 
-    addToCart(itemName, itemQuantity, itemPrice);
+    if (functionID == 1) {
+        selectPrice(elementID, itemPrice);
+    } else {
+        addToCart(itemName, itemQuantity, itemPrice);
+    }
 
+}
+
+// Display price in the section function 
+function selectPrice(element, price) {
+    element.innerHTML = `Rs. ${numberFormat(price)}`;
 }
 
 // Add item to cart function
@@ -146,7 +169,7 @@ function manageTotalCartPrice(functionNo, itemPrice) {
     if (functionNo == 0) {
         totalCartPrice += itemPrice;
         totalPrice.innerHTML = numberFormat(totalCartPrice);
-        
+
     } else if (functionNo == 1) {
         totalCartPrice = totalCartPrice - numberDeformat(itemPrice);
         totalPrice.innerHTML = numberFormat(totalCartPrice);
@@ -166,45 +189,60 @@ function numberDeformat(number) {
 }
 
 
-// Calling the Functions
+// Calling the add to cart Functions 
 fruitBtn.addEventListener("click", function () {
-    let fruitSelect = document.getElementById("fruitSelect");
-    let fruitQuantity = document.getElementById("fruitQuantity");
-
     checkValidity("fruitForm", fruitSelect, fruitQuantity);
 });
 
 vegeBtn.addEventListener("click", function () {
-    let vegeSelect = document.getElementById("vegeSelect");
-    let vegeQuantity = document.getElementById("vegeQuantity");
-
     checkValidity("vegeForm", vegeSelect, vegeQuantity);
 });
 
 dariyBtn.addEventListener("click", function () {
-    let dariySelect = document.getElementById("dariySelect");
-    let dariyQuantity = document.getElementById("dariyQuantity");
-
     checkValidity("dairyForm", dariySelect, dariyQuantity);
 });
 
 meatBtn.addEventListener("click", function () {
-    let meatSelect = document.getElementById("meatSelect");
-    let meatQuantity = document.getElementById("meatQuantity");
-
     checkValidity("meatForm", meatSelect, meatQuantity);
 });
 
 bakingBtn.addEventListener("click", function () {
-    let bakingSelect = document.getElementById("bakingSelect");
-    let bakingQuantity = document.getElementById("bakingQuantity");
-
     checkValidity("bakingForm", bakingSelect, bakingQuantity);
 });
 
 cosmeticsBtn.addEventListener("click", function () {
-    let cosmeticsSelect = document.getElementById("cosmeticsSelect");
-    let cosmeticsQuantity = document.getElementById("cosmeticsQuantity");
-
     checkValidity("cosmaticsForm", cosmeticsSelect, cosmeticsQuantity);
+});
+
+
+
+// Calling the product section item display
+fruitQuantity.addEventListener("input", function () {
+    let fruitSectionPrice = document.querySelector("#fruitForm p");
+    formSettings(fruitSelect, fruitQuantity, fruitSectionPrice, 1);
+});
+
+vegeQuantity.addEventListener("input", function () {
+    let vegeSectionPrice = document.querySelector("#vegeForm p");
+    formSettings(vegeSelect, vegeQuantity, vegeSectionPrice, 1);
+});
+
+dariyQuantity.addEventListener("input", function () {
+    let dariySectionPrice = document.querySelector("#dairyForm p");
+    formSettings(dariySelect, dariyQuantity, dariySectionPrice, 1);
+});
+
+cosmeticsQuantity.addEventListener("input", function () {
+    let cosmeticsSectionPrice = document.querySelector("#cosmaticsForm p");
+    formSettings(cosmeticsSelect, cosmeticsQuantity, cosmeticsSectionPrice, 1);
+});
+
+meatQuantity.addEventListener("input", function () {
+    let meatSectionPrice = document.querySelector("#meatForm p");
+    formSettings(meatSelect, meatQuantity, meatSectionPrice, 1);
+});
+
+bakingQuantity.addEventListener("input", function () {
+    let bakingSectionPrice = document.querySelector("#bakingForm p");
+    formSettings(bakingSelect, bakingQuantity, bakingSectionPrice, 1);
 });
