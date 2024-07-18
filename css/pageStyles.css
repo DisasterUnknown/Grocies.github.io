@@ -219,246 +219,6 @@
 
 
 /* ______________________________________________________________________________________________________________________________________ */
-/* Order Page Styles */
-
-/* Navigation bar Styles */
-#order {
-    color: var(--currentPageColor);
-}
-
-#order:hover {
-    color: var(--hoverColor);
-}
-
-/* Topic Styles */
-#hrOrder1 {
-    width: 159px;
-}
-
-#hrOrder2 {
-    width: 64px;
-}
-
-@media screen and (max-width: 700px) {
-    #hrOrder1 {
-        width: 300px;
-        text-align: center;
-    }
-}
-
-/*.......................................................................................................................*/
-/* Order Forms styles */
-.orderForms {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.orderForms form {
-    width: 30%;
-    margin: 10px;
-    text-align: center;
-}
-
-.orderForms form fieldset {
-    border-radius: 10px;
-    border: 1.5px solid white;
-}
-
-.orderForms form h2 {
-    color: green;
-    font-weight: bold;
-}
-
-.orderForms form table {
-    margin: 0 auto;
-
-    td {
-        text-align: left;
-        padding: 10px;
-
-        select {
-            width: 80%;
-            float: right;
-        }
-
-        input {
-            width: 76%;
-            float: right;
-        }
-    }
-}
-
-.orderForms form p {
-    text-align: center;
-    color: white;
-    font-weight: bold;
-}
-
-.submitBtns {
-    width: 30%;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 18px;
-    background-color: orange;
-    margin-bottom: 5%;
-}
-
-/* Hovering effects */
-.orderForms form fieldset:hover {
-    background-color: rgba(49, 89, 0, 0.347);
-    transition: .5s;
-}
-
-.orderForms form fieldset:hover h2 {
-    color: rgb(0, 175, 0);
-    transition: .9s;
-}
-
-.submitBtns:hover {
-    background-color: greenyellow;
-    transition: .5s;
-}
-
-/*.......................................................................................................................*/
-/* Cart Table styles */
-#hrOrder2 {
-    margin-top: 50px;
-}
-
-.orderedList {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.orderedList table {
-    width: 100%;
-
-    th {
-        padding: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.54);
-        background-color: rgba(71, 71, 71, 0.586);
-    }
-
-    td {
-        padding: 10px;
-        text-align: center;
-        border: 1px solid rgba(255, 255, 255, 0.54);
-    }
-
-    .priceCell {
-        display: flex;
-        justify-content: space-between;
-
-        span {
-            width: 90%;
-        }
-
-        button {
-            color: white;
-            background-color: red;
-        }
-    }
-
-    /* Cloum widths */
-    .items {
-        text-align: left;
-    }
-
-    .quantity {
-        width: 20%;
-    }
-
-    .price {
-        width: 40%;
-    }
-}
-
-/* Cart Table Button styles */
-.cartTableBtns {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-
-    table {
-        width: 100%;
-    }
-
-    #useFavBtn {
-        float: left;
-    }
-
-    #addFavBtn {
-        float: right;
-    }
-
-}
-
-/* Order Form Small Screen Styles */
-@media (max-width: 862px) and (min-width: 662px) {
-    .orderForms form h2 {
-        height: 50px;
-    }
-
-    .orderForms form fieldset button {
-        width: 100px;
-    }
-}
-
-@media screen and (max-width: 662px) {
-    /* Order Form styles */
-    .orderForms {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .orderForms form {
-        width: 100%;
-    }
-
-    .orderForms form h2 {
-        margin: 10px;
-    }
-
-    .submitBtns {
-        width: 60%;
-    }
-
-    .orderForms form table {
-        td {
-            width: 50%;
-            padding: 1px;
-            padding-top: 10px;
-
-            select {
-                width: 82%;
-            }
-        }
-    }
-
-    #useFavBtn {
-        font-size: 15px;
-    }
-
-    #addFavBtn {
-        font-size: 15px;
-    }
-
-    /* Footer styles */
-    footer {
-        margin-bottom: 0px;
-    }
-}
-
-
-
-
-
-/* ______________________________________________________________________________________________________________________________________ */
 /* Set Order Page Styles */
 #hrSetOrder1 {
     width: 180px;
@@ -468,7 +228,7 @@
 .orderForm {
     width: 60%;
     margin: 0 auto;
-    margin-bottom: 60px !important;
+    margin-bottom: 35px !important;
     text-align: center;
 
     fieldset {
@@ -502,8 +262,45 @@
     }
 }
 
+/*.......................................................................................................................*/
+/* Cart Table styles */
 #hrSetOrder2 {
     width: 64px;
+}
+
+.orderedList {
+    margin-top: 10px !important;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.orderedList table {
+    width: 100%;
+
+    th {
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.54);
+        background-color: rgba(71, 71, 71, 0.586);
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.54);
+    }
+
+    /* Cloum widths */
+    .items {
+        text-align: left;
+    }
+
+    .quantity {
+        width: 20%;
+    }
+
+    .price {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 600px) {

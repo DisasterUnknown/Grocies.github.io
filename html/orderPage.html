@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/commonStyles.css">
-    <link rel="stylesheet" href="../css/pageStyles.css">
+    <link rel="stylesheet" href="../css/orderPageStyles.css">
 </head>
 
 <body>
@@ -52,30 +52,32 @@
             <form id="fruitForm">
                 <!-- Fruits section  -->
                 <fieldset>
-                    <h2>Fruits</h2>
-                    <table>
-                        <tr>
-                            <td>
-                                <label>Product Name: </label>
-                            </td>
-                            <td>
-                                <select id="fruitSelect"></select>
-                            </td>
-                        </tr>
+                    <div class="productForm">
+                        <h2>Fruits</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Product Name: </label>
+                                </td>
+                                <td>
+                                    <select id="fruitSelect"></select>
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <td>
-                                <label>Kgs: </label>
-                            </td>
-                            <td>
-                                <input type="number" id="fruitQuantity" step="0.1" min="0.1" required>
-                            </td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td>
+                                    <label>Kgs: </label>
+                                </td>
+                                <td>
+                                    <input type="number" id="fruitQuantity" step="0.1" min="0.1" required>
+                                </td>
+                            </tr>
+                        </table>
 
-                    <p>Price: </p>
+                        <p>Price: </p>
 
-                    <button type="button" class="submitBtns" id="fruitBtn">Add to Cart</button>
+                        <button type="button" class="submitBtns" id="fruitBtn">Add to Cart</button>
+                    </div>
                 </fieldset>
             </form>
 
