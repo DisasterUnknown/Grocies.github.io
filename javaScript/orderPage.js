@@ -6,6 +6,44 @@ let meatSelect = document.getElementById("meatSelect");
 let bakingSelect = document.getElementById("bakingSelect");
 let cosmeticsSelect = document.getElementById("cosmeticsSelect");
 
+// JSON file Locations 
+let vegeJsonLocation = "../JSON/vege.json";
+let fruitJsonLocation = "../JSON/fruits.json";
+let meatJsonLocation = "../JSON/meat.json";
+let cosmeticsJsonLocation = "../JSON/cosmetics.json";
+let beveragesJsonLocation = "../JSON/beverages.json";
+let dairyJsonLocation = "../JSON/dairy.json";
+
+// Adding the products to the respective sections
+function selectionListCreation(selectionList, productJSONLocation) {
+    fetch(productJSONLocation)
+        .then(res => res.json())
+        .then(data => {dataCreation(data)})
+        .catch(error => console.log(error))
+
+    function dataCreation(data) {
+        data = data[0];
+        let keyList = Object.keys(data);
+        
+        keyList.forEach(product => {
+            selectionList.innerHTML += `<option value="${product}">${product}</option>`
+        });
+    }
+}
+
+// Calling the functions then the page is been loaded
+window.onload = selectionListCreation(fruitSelect, fruitJsonLocation);
+window.onload = selectionListCreation(vegeSelect, vegeJsonLocation);
+window.onload = selectionListCreation(dariySelect, dairyJsonLocation);
+window.onload = selectionListCreation(meatSelect, meatJsonLocation);
+window.onload = selectionListCreation(bakingSelect, beveragesJsonLocation);
+window.onload = selectionListCreation(cosmeticsSelect, cosmeticsJsonLocation);
+
+
+
+
+// ----------------------------------------------------------------------------------------------------------------------------------------
+// Referancing the elements from the DOM
 let cosmeticsQuantity = document.getElementById("cosmeticsQuantity");
 let bakingQuantity = document.getElementById("bakingQuantity");
 let meatQuantity = document.getElementById("meatQuantity");
@@ -41,7 +79,7 @@ function formValidity(formID, selectList, itemQuantity, fileLocation) {
 function formSettings(selectList, itemQuantity, elementID, functionID, fileLocation) {
     // Importing the json file
     function jsonImport(fileLocation) {
-        return fetch(fileLocation)
+        fetch(fileLocation)
             .then(res => res.json())
             .then(data => processData(data))
             .catch(error => console.log(error))
@@ -140,17 +178,6 @@ function numberDeformat(number) {
     return parseInt(number.replace(/,/g, ''));
 }
 
-
-
-
-// ----------------------------------------------------------------------------------------------------------------------------------------
-// Locations 
-let vegeJsonLocation = "../JSON/vege.json";
-let fruitJsonLocation = "../JSON/fruits.json";
-let meatJsonLocation = "../JSON/meat.json";
-let cosmeticsJsonLocation = "../JSON/cosmetics.json";
-let beveragesJsonLocation = "../JSON/beverages.json";
-let dairyJsonLocation = "../JSON/dairy.json";
 
 
 
