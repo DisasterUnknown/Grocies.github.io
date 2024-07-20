@@ -22,7 +22,6 @@ function selectionListCreation(selectionList, productJSONLocation) {
         .catch(error => console.log(error))
 
     function dataCreation(data) {
-        data = data[0];
         let keyList = Object.keys(data);
         
         keyList.forEach(product => {
@@ -87,8 +86,9 @@ function formSettings(selectList, itemQuantity, elementID, functionID, fileLocat
 
     // Importing the JSON files into the page
     function processData(data) {
-        data = data[0]
         let itemName = selectList.value;
+        console.log(itemName);
+        console.log(data[itemName]);
         itemQuantity = itemQuantity.value;
         let itemPrice = data[itemName] * itemQuantity;
         // console.log(`Name: ${itemName}, Quantity: ${itemQuantity}, Price: Rs.${itemPrice}`);

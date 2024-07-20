@@ -49,9 +49,45 @@
 
         <!-- Order Form List -->
         <div class="orderForms">
-            <form id="fruitForm">
-                <!-- Fruits section  -->
+            <!-- Cosmetics Section  -->
+            <form id="cosmaticsForm">
                 <fieldset>
+                    <div class="center-text">Cosmetics</div>
+                    <div class="productForm">
+                        <h2>Cosmetics</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Product Name: </label>
+                                </td>
+                                <td>
+                                    <select id="cosmeticsSelect"></select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label>Quantity:</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="cosmeticsQuantity" min="1" required>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <p>Price: </p>
+
+                        <button type="button" class="submitBtns" id="cosmeticsBtn">Add to Cart</button>
+                    </div>
+                </fieldset>
+            </form>
+
+
+
+            <!-- Fruits section  -->
+            <form id="fruitForm">
+                <fieldset>
+                    <div class="center-text">Fruits</div>
                     <div class="productForm">
                         <h2>Fruits</h2>
                         <table>
@@ -85,154 +121,138 @@
             <!-- Vegetables section -->
             <form id="vegeForm">
                 <fieldset>
-                    <h2>Vegetables</h2>
-                    <table>
-                        <tr>
-                            <td>
-                                <label>Product Name: </label>
-                            </td>
-                            <td>
-                                <select id="vegeSelect"></select>
-                            </td>
-                        </tr>
+                    <div class="center-text">Vegetables</div>
+                    <div class="productForm">
+                        <h2>Vegetables</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Product Name: </label>
+                                </td>
+                                <td>
+                                    <select id="vegeSelect"></select>
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <td>
-                                <label>Kgs:</label>
-                            </td>
-                            <td>
-                                <input type="number" id="vegeQuantity" step="0.1" min="0.1" required>
-                            </td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td>
+                                    <label>Kgs:</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="vegeQuantity" step="0.1" min="0.1" required>
+                                </td>
+                            </tr>
+                        </table>
 
-                    <p>Price: </p>
+                        <p>Price: </p>
 
-                    <button type="button" class="submitBtns" id="vegeBtn">Add to Cart</button>
+                        <button type="button" class="submitBtns" id="vegeBtn">Add to Cart</button>
+                    </div>
                 </fieldset>
             </form>
 
-
-            <!-- Dairy Produce Section  -->
-            <form id="dairyForm">
-                <fieldset>
-                    <h2>Dairy Produce</h2>
-                    <table>
-                        <tr>
-                            <td>
-                                <label>Product Name: </label>
-                            </td>
-                            <td>
-                                <select id="dariySelect"></select>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <label>Quantity:</label>
-                            </td>
-                            <td>
-                                <input type="number" id="dariyQuantity" min="1" required>
-                            </td>
-                        </tr>
-                    </table>
-
-                    <p>Price: </p>
-
-                    <button type="button" class="submitBtns" id="dariyBtn">Add to Cart</button>
-                </fieldset>
-            </form>
-
-
-            <!-- Cosmetics Section  -->
-            <form id="cosmaticsForm">
-                <fieldset>
-                    <h2>Cosmetics</h2>
-                    <table>
-                        <tr>
-                            <td>
-                                <label>Product Name: </label>
-                            </td>
-                            <td>
-                                <select id="cosmeticsSelect"></select>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <label>Quantity:</label>
-                            </td>
-                            <td>
-                                <input type="number" id="cosmeticsQuantity" min="1" required>
-                            </td>
-                        </tr>
-                    </table>
-
-                    <p>Price: </p>
-
-                    <button type="button" class="submitBtns" id="cosmeticsBtn">Add to Cart</button>
-                </fieldset>
-            </form>
 
 
             <!-- Meat and Seafood Section  -->
             <form id="meatForm">
                 <fieldset>
-                    <h2>Meat and Seafood</h2>
-                    <table>
-                        <tr>
-                            <td>
-                                <label>Product Name: </label>
-                            </td>
-                            <td>
-                                <select id="meatSelect"></select>
-                            </td>
-                        </tr>
+                    <div class="center-text">Meat and Seafood</div>
+                    <div class="productForm">
+                        <h2>Meat and Seafood</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Product Name: </label>
+                                </td>
+                                <td>
+                                    <select id="meatSelect"></select>
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <td>
-                                <label>Kgs:</label>
-                            </td>
-                            <td>
-                                <input type="number" id="meatQuantity" step="0.1" min="0.1" required>
-                            </td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td>
+                                    <label>Kgs:</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="meatQuantity" step="0.1" min="0.1" required>
+                                </td>
+                            </tr>
+                        </table>
 
-                    <p>Price: </p>
+                        <p>Price: </p>
 
-                    <button type="button" class="submitBtns" id="meatBtn">Add to Cart</button>
+                        <button type="button" class="submitBtns" id="meatBtn">Add to Cart</button>
+                    </div>
                 </fieldset>
             </form>
+
+
+
+            <!-- Dairy Produce Section  -->
+            <form id="dairyForm">
+                <fieldset>
+                    <div class="center-text">Dairy Produce</div>
+                    <div class="productForm">
+                        <h2>Dairy Produce</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Product Name: </label>
+                                </td>
+                                <td>
+                                    <select id="dariySelect"></select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label>Quantity:</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="dariyQuantity" min="1" required>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <p>Price: </p>
+
+                        <button type="button" class="submitBtns" id="dariyBtn">Add to Cart</button>
+                    </div>
+                </fieldset>
+            </form>
+
 
 
             <!-- Baking, Cooking Ingredients Section  -->
             <form id="bakingForm">
                 <fieldset>
-                    <h2>Baking, Cooking Ingredients</h2>
-                    <table>
-                        <tr>
-                            <td>
-                                <label>Product Name: </label>
-                            </td>
-                            <td>
-                                <select id="bakingSelect"></select>
-                            </td>
-                        </tr>
+                    <div class="center-text">Cooking Ingredients</div>
+                    <div class="productForm">
+                        <h2>Baking, Cooking Ingredients</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Product Name: </label>
+                                </td>
+                                <td>
+                                    <select id="bakingSelect"></select>
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <td>
-                                <label>Quantity:</label>
-                            </td>
-                            <td>
-                                <input type="number" id="bakingQuantity" min="1" required>
-                            </td>
-                        </tr>
-                    </table>
+                            <tr>
+                                <td>
+                                    <label>Quantity:</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="bakingQuantity" min="1" required>
+                                </td>
+                            </tr>
+                        </table>
 
-                    <p>Price: </p>
+                        <p>Price: </p>
 
-                    <button type="button" class="submitBtns" id="bakingBtn">Add to Cart</button>
+                        <button type="button" class="submitBtns" id="bakingBtn">Add to Cart</button>
+                    </div>
                 </fieldset>
             </form>
         </div>
