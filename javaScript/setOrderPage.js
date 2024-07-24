@@ -7,6 +7,25 @@ let userCVV = document.getElementById("userCVV");
 let submitBtn = document.getElementById("submitBtn");
 
 
+// Thanking the user for using Grocies and displaying the diliver date
+setOrder = () => {
+    if ((userTelNo.value.length == 10) && (userCardNo.value.length == 16) && (userCVV.value.length == 3)) {
+        let currentDate = new Date();
+
+        let date = currentDate.getDate();
+        let month = currentDate.getMonth() + 1;
+        let year = currentDate.getFullYear();
+
+        let userMsg = `Thank you for visiting our website! \nYour order will be dilivered by ${date + 3}.${month}.${year}`;
+
+        window.alert(userMsg);
+
+    } else {
+        window.alert("Please Recheck The Details!");
+    }
+}
+
+
 // Validation functions 
 userName.addEventListener("input", function () {
     userName.value = userName.value.replace(/\d/g, '');
@@ -24,20 +43,5 @@ userCVV.addEventListener("input", function () {
     userCVV.value = userCVV.value.slice(0, 3);
 });
 
-// Thanking the user for using Grocies and displaying the diliver date
-submitBtn.addEventListener("click", function () {
-    if ((userTelNo.value.length == 10) && (userCardNo.value.length == 16) && (userCVV.value.length == 3)) {
-        let currentDate = new Date();
-
-        let date = currentDate.getDate();
-        let month = currentDate.getMonth() + 1;
-        let year = currentDate.getFullYear();
-
-        let userMsg = `Thank you for visiting our website! \nYour order will be dilivered by ${date + 3}.${month}.${year}`;
-
-        window.alert(userMsg);
-
-    } else {
-        window.alert("Please Recheck The Details!");
-    }
-});
+// Calling the set order function
+submitBtn.addEventListener("click", setOrder);

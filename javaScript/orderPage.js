@@ -276,8 +276,8 @@ bakingSelect.addEventListener("change", function () {
     callFunctions(bakingQuantity, "#bakingForm p", bakingSelect, beveragesJsonLocation);
 });
 
-// Table reset Btn
-restTabeBtn.addEventListener("click", function () {
+
+resetCart = () => {
     let cartTable = document.getElementById("cartTable");
     cartTable.innerHTML = ` <tr>
                                 <th>Item</th>
@@ -295,7 +295,11 @@ restTabeBtn.addEventListener("click", function () {
                                 <td colspan="2" class="items">Total</td>
                                 <td id="totalPrice">0</td>
                             </tr>`
-});
+}
+
+
+// Table reset Btn
+restTabeBtn.addEventListener("click", resetCart);
 
 
 
