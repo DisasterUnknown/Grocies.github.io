@@ -57,6 +57,9 @@ let cosmeticsBtn = document.getElementById("cosmeticsBtn");
 let meatBtn = document.getElementById("meatBtn");
 let bakingBtn = document.getElementById("bakingBtn");
 
+// Shopping Tabe
+let resetBtn = document.getElementById("restTabeBtn");
+
 
 
 
@@ -271,6 +274,27 @@ bakingQuantity.addEventListener("input", function () {
 });
 bakingSelect.addEventListener("change", function () {
     callFunctions(bakingQuantity, "#bakingForm p", bakingSelect, beveragesJsonLocation);
+});
+
+// Table reset Btn
+restTabeBtn.addEventListener("click", function () {
+    let cartTable = document.getElementById("cartTable");
+    cartTable.innerHTML = ` <tr>
+                                <th>Item</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+
+                            <tr>
+                                <td class="items">&nbsp;</td>
+                                <td class="quantity">&nbsp;</td>
+                                <td class="price">&nbsp;</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" class="items">Total</td>
+                                <td id="totalPrice">0</td>
+                            </tr>`
 });
 
 
