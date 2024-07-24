@@ -63,14 +63,14 @@ function useFavorit() {
             itemCell1.className = "items";
             itemCell2.textContent = data.quantity;
             itemCell3.innerHTML = `<div class="priceCell">
-                                            <span>${data.price.toLocaleString('en-US')}</span>
-                                            <button onclick="deleteRow(this)">x</button>
-                                        </div>`;
+                                        <span>${data.price.toLocaleString('en-US')}</span>
+                                        <button onclick="deleteRow(this)">x</button>
+                                    </div>`;
 
             cartTotal += data.price;
         });
 
-        cartTable.innerHTML += `
+    cartTable.innerHTML += `
     <tr>
         <td class="items">&nbsp;</td>
         <td class="quantity">&nbsp;</td>
