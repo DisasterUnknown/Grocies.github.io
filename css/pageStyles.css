@@ -134,7 +134,7 @@
     font-weight: bold;
 }
 
-.productFields legend {
+.productFields ol li p {
     color: white; 
     margin: 0px 10px; 
     font-size: 20px;
